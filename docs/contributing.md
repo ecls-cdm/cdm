@@ -13,7 +13,7 @@ If you find a bug, have a question regarding the data structure, ideas
 for improvement, or anything else that feels import to you, please let
 the community know using the GitHub issue forms!
 
-## We need your help:
+## We appreciate your support:
 
 Feel free to help us with any of those subjects:
 
