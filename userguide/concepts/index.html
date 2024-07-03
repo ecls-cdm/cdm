@@ -1,0 +1,2676 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../usecases/">
+      
+      
+        <link rel="next" href="../trackingmaterials/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>Concepts - ECLS CDM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#concepts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ECLS CDM" class="md-header__button md-logo" aria-label="ECLS CDM" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ECLS CDM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ecls-cdm/cdm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ecls-cdm/cdm
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../structure/" class="md-tabs__link">
+          
+  
+    
+  
+  Structure
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contributing/" class="md-tabs__link">
+        
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ECLS CDM" class="md-nav__button md-logo" aria-label="ECLS CDM" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    ECLS CDM
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ecls-cdm/cdm" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ecls-cdm/cdm
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../structure/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Structure
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Structure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Core tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Core tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_run/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_run
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_circuit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_circuit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_blood_pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_blood_pump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_cannula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_cannula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_membrane_lung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_membrane_lung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_temperature_regulation_device/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_temperature_regulation_device
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Support tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Support tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_circuit_component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_circuit_component
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_blood_pump_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_blood_pump_material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_cannula_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_cannula_material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_console_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_console_material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_membrane_lung_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_membrane_lung_material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../structure/ecls_temperature_regulation_device_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecls_temperature_regulation_device_material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usecases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use cases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#observations-with-an-unknown-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observations with an unknown timestamp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnoses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecls-specific-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-specific concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ECLS-specific concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#congenital-diaphragmatic-hernia-cdh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Congenital diaphragmatic hernia (CDH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-as-bridge-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS as bridge to...
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blood-samples-drawn-from-the-ecls-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blood samples drawn from the ECLS circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-related-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-related measurements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedures-on-the-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedures on the circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differential-oxygenation-and-co2-tension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differential oxygenation and CO2 tension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recirculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recirculation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-renal-replacement-therapy-crrt-using-the-ecls-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous renal replacement therapy (CRRT) using the ECLS circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-related-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-related devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discontinuation-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discontinuation trial
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      General concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-patient-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      General patient characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#race-ethnicity-and-gender" class="md-nav__link">
+    <span class="md-ellipsis">
+      Race, ethnicity and gender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#units-of-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Units of measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vital-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vital parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impella" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impella
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trackingmaterials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tracking materials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#observations-with-an-unknown-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observations with an unknown timestamp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnoses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecls-specific-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-specific concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ECLS-specific concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#congenital-diaphragmatic-hernia-cdh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Congenital diaphragmatic hernia (CDH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-as-bridge-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS as bridge to...
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blood-samples-drawn-from-the-ecls-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blood samples drawn from the ECLS circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-related-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-related measurements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedures-on-the-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedures on the circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differential-oxygenation-and-co2-tension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differential oxygenation and CO2 tension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recirculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recirculation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-renal-replacement-therapy-crrt-using-the-ecls-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous renal replacement therapy (CRRT) using the ECLS circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecls-related-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      ECLS-related devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discontinuation-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discontinuation trial
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      General concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-patient-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      General patient characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#race-ethnicity-and-gender" class="md-nav__link">
+    <span class="md-ellipsis">
+      Race, ethnicity and gender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#units-of-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Units of measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vital-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vital parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impella" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impella
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="concepts">Concepts</h1>
+<p>We have gathered concepts commonly used in the context of ECLS. These
+should assist you in implementing the OMOP CDM and the ECLS CDM expansion
+more quickly and efficiently within your local infrastructure.</p>
+<h2 id="observations-with-an-unknown-timestamp">Observations with an unknown timestamp</h2>
+<p>Sometimes, the exact timing of medical procedures, lab measurements, or
+disease onset is unknown. By OMOP CDM conventions you can capture these data
+using the <em>observation</em> table with two concepts:</p>
+<ol>
+<li><em><a href="https://athena.ohdsi.org/search-terms/terms/1340204" target="_blank">1340204</a>, History of event</em> as <em>observation_concept_id</em></li>
+<li>The actual observation as <em>value_as_concept_id</em></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can limit the timeframe by using any <em>History of event</em> child that is more precise.
+Click <a href="https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&amp;vocabulary=OMOP+Extension&amp;page=1&amp;pageSize=15&amp;query=%22history+of+event%22&amp;boosts" target="_blank">here</a> for more concepts.</p>
+</div>
+<h2 id="diagnoses">Diagnoses</h2>
+<p>Capturing the right diagnoses is an important task, especially for
+patients supported by an extracorporeal circuit. Diagnoses should be
+captured in the <em>condition_occurrence</em> table. When entering conditions,
+make sure to set a proper <em>condition_status_concept_id</em>. Typical concepts
+are:</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/32890/" target="_blank">32890</a></td>
+<td>Admission diagnosis</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/32896/" target="_blank">32896</a></td>
+<td>Discharge diagnosis</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/32902/" target="_blank">32902</a></td>
+<td>Primary diagnosis</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/32908/" target="_blank">32908</a></td>
+<td>Secondary diagnosis</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In line with standard mapping rules, pre-existing conditions will be
+captured in the <em>observation</em> table.
+Click <a href="https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&amp;conceptClass=Condition+Status&amp;page=1&amp;pageSize=50">here</a>
+for more types of diagnosis.</p>
+</div>
+<h2 id="ecls-specific-concepts">ECLS-specific concepts</h2>
+<h3 id="congenital-diaphragmatic-hernia-cdh">Congenital diaphragmatic hernia (CDH)</h3>
+<p>A typical condition seen in neonatal patients is a congenital diaphragmatic
+hernia, where abdominal organs protrude into the thoracic cavity,
+potentially impacting lung function and cardiac output.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717796/" target="_blank">36717796</a></td>
+<td>Left congenital diaphragmatic hernia</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717797/" target="_blank">36717797</a></td>
+<td>Right congenital diaphragmatic hernia</td>
+<td>condition_occurrence</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The repair is captured using <em><a href="https://athena.ohdsi.org/search-terms/terms/4147525/" target="_blank">4147525</a>, Repair of neonatal diaphragmatic hernia</em>
+as <em>procedure</em> or <em>observation</em>, if the exact point in time is not known (see above).</p>
+</div>
+<h3 id="ecls-as-bridge-to">ECLS as bridge to...</h3>
+<p>The intention to treat is different for every patient. Choose accordingly:</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717798/" target="_blank">36717798</a></td>
+<td>Extracorporeal life support as bridge to recovery</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717799/" target="_blank">36717799</a></td>
+<td>Extracorporeal life support as bridge to transplant</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717800/" target="_blank">36717800</a></td>
+<td>Extracorporeal life support as bridge to lung transplant</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717801/" target="_blank">36717801</a></td>
+<td>Extracorporeal life support as bridge to heart transplant</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717802/" target="_blank">36717802</a></td>
+<td>Extracorporeal life support as bridge to combined heart-lung transplant</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717803/" target="_blank">36717803</a></td>
+<td>Extracorporeal life support as bridge to decision</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717804/" target="_blank">36717804</a></td>
+<td>Extracorporeal life support as bridge to destination</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717805/" target="_blank">36717805</a></td>
+<td>Extracorporeal life support as bridge to long-term mechanical circulatory support</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717806/" target="_blank">36717806</a></td>
+<td>Extracorporeal life support as periprocedural support</td>
+<td>observation</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717807/" target="_blank">36717807</a></td>
+<td>Extracorporeal life support as interval support for organ retrieval</td>
+<td>observation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="blood-samples-drawn-from-the-ecls-circuit">Blood samples drawn from the ECLS circuit</h3>
+<p>The OMOP CDM provides multiple methods for storing blood sample data.
+The <em>measurement</em> table can be populated using either pre-coordinated
+concepts (usually LOINC-based) or concepts combined with the specimen
+table. The specimen table is designed to identify the origin of a
+biological sample. Both entries must be linked via the <em>fact_relationship</em>
+table (many-to-many relationship).</p>
+<p>We recommend using the specimen table approach, as it allows for a more
+nuanced way to store results, despite being potentially more cumbersome for users.</p>
+<p>The ECLS CDM introduced two new concepts to denote the exact origin when
+drawing blood from an extracorporeal circuit.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717874/" target="_blank">36717874</a></td>
+<td>Pre-membrane lung blood specimen</td>
+<td>specimen</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717875/" target="_blank">36717875</a></td>
+<td>Post-membrane lung blood specimen</td>
+<td>specimen</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A <em>pre-pump head blood specimen</em> is intentionally missing as it is
+equal to <em>Pre-membrane lung blood specimen</em>.</p>
+</div>
+<p>Typical other sites of origin are:</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4047496/" target="_blank">4047496</a></td>
+<td>Arterial blood specimen</td>
+<td>specimen</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4045667/" target="_blank">4045667</a></td>
+<td>Venous blood specimen</td>
+<td>specimen</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If laterality is important (V-A ECMO with possible differential
+oxygenation), use the <em>anatomic_site_concept_id</em>:</p>
+<p>For example:</p>
+<p><em><a href="https://athena.ohdsi.org/search-terms/terms/4284463/" target="_blank">4284463</a>, Structure of left radial artery</em> <br>
+<em><a href="https://athena.ohdsi.org/search-terms/terms/4276858/" target="_blank">4276858</a>, Structure of right radial artery</em></p>
+</div>
+<h3 id="ecls-related-measurements">ECLS-related measurements</h3>
+<p>Since settings and actual measurements can differ, we provide both
+concept types. In most cases, the setting and the actual measurement
+might be the same.</p>
+<div class="admonition info">
+<p class="admonition-title">RPM is a unit</p>
+<p>Revolutions per minute (RPM), although frequently misused
+as a proxy for the blood pump speed, is a unit.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>proposed UOM</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717866/" target="_blank">36717866</a></td>
+<td>Extracorporeal life support pump flow rate <strong>setting</strong></td>
+<td>observation</td>
+<td>L/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717867/" target="_blank">36717867</a></td>
+<td>Extracorporeal life support pump rotational speed <strong>setting</strong></td>
+<td>observation</td>
+<td>/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717868/" target="_blank">36717868</a></td>
+<td>Extracorporeal life support temperature regulation device target <strong>setting</strong></td>
+<td>observation</td>
+<td>Cel</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717869/" target="_blank">36717869</a></td>
+<td>Extracorporeal life support pump flow rate</td>
+<td>measurement</td>
+<td>L/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717870/" target="_blank">36717870</a></td>
+<td>Extracorporeal life support pump rotational speed</td>
+<td>measurement</td>
+<td>/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717871/" target="_blank">36717871</a></td>
+<td>Extracorporeal life support temperature regulation device temperature</td>
+<td>measurement</td>
+<td>Cel</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Measurements about the performance of the membrane lung in respect to
+the patient’s status are of high interest.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>proposed UOM</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717879/" target="_blank">36717879</a></td>
+<td>Device inlet carbon dioxide fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717880/" target="_blank">36717880</a></td>
+<td>Device inlet oxygen fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717881/" target="_blank">36717881</a></td>
+<td>Sweep gas flow rate</td>
+<td>measurement</td>
+<td>L/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717882/" target="_blank">36717882</a></td>
+<td>Sweep gas inlet carbon dioxide fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717883/" target="_blank">36717883</a></td>
+<td>Sweep gas inlet oxygen fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717884/" target="_blank">36717884</a></td>
+<td>Effective extracorporeal flow</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717885/" target="_blank">36717885</a></td>
+<td>Extracorporeal flow fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717886/" target="_blank">36717886</a></td>
+<td>Outlet blood oxygen saturation</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717887/" target="_blank">36717887</a></td>
+<td>Inlet blood oxygen saturation</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717888/" target="_blank">36717888</a></td>
+<td>Pre-membrane lung carbon dioxide tension</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717889/" target="_blank">36717889</a></td>
+<td>Pre-membrane lung oxygen tension</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717890/" target="_blank">36717890</a></td>
+<td>Pre-membrane lung pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717891/" target="_blank">36717891</a></td>
+<td>Pre-membrane lung oxygen saturation</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717892/" target="_blank">36717892</a></td>
+<td>Post-membrane lung carbon dioxide tension</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717893/" target="_blank">36717893</a></td>
+<td>Post-membrane lung oxygen tension</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717894/" target="_blank">36717894</a></td>
+<td>Post-membrane lung pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717895/" target="_blank">36717895</a></td>
+<td>Post-membrane lung oxygen saturation</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717896/" target="_blank">36717896</a></td>
+<td>Pump inlet pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717897/" target="_blank">36717897</a></td>
+<td>Membrane lung pressure drop</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717898/" target="_blank">36717898</a></td>
+<td>Recirculation fraction</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="procedures-on-the-circuit">Procedures on the circuit</h3>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717862/" target="_blank">36717862</a></td>
+<td>Water change of extracorporeal life support temperature regulation device</td>
+<td>procedure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717863/" target="_blank">36717863</a></td>
+<td>Manual operation of extracorporeal life support device</td>
+<td>procedure</td>
+<td>Using the hand crank</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717848/" target="_blank">36717848</a></td>
+<td>Sighing of extracorporeal membrane lung</td>
+<td>procedure</td>
+<td><em>Sighing</em> is the official term. Other typical terms used are <em>flushing</em> or <em>sneezing</em>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="differential-oxygenation-and-co2-tension">Differential oxygenation and CO2 tension</h3>
+<p>In venoarterial ECMO, blood can be differentially oxygenated and
+decarboxylated depending on the intrinsic cardiac output.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717859/" target="_blank">36717859</a></td>
+<td>Differential oxygenation</td>
+<td>observation</td>
+<td>In a clinical setting, synonyms such as <em>Harlequin syndrome</em> or <em>North-South phenomenon</em> are typically used.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717861/" target="_blank">36717861</a></td>
+<td>Differential carbon dioxide tension</td>
+<td>observation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><em><a href="https://athena.ohdsi.org/search-terms/terms/36717860/" target="_blank">36717860</a>, Differential hypoxemia</em> is the resulting condition. Do not
+forget to create an entry for it in the <em>condition_occurrence</em> table.</p>
+</div>
+<h3 id="recirculation">Recirculation</h3>
+<p>Recirculation is only observable in venovenous configurations. Do not forget about
+the recirculation fraction as measureable parameter.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Recirculation can also be a reason to exchange parts of your circuit.
+If it is the primary reason it is considered a complication. Make sure
+to use the concept for <em>stop_reason_concept_id</em> if this is the case.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717821/" target="_blank">36717821</a></td>
+<td>Recirculation</td>
+<td>observation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="continuous-renal-replacement-therapy-crrt-using-the-ecls-circuit">Continuous renal replacement therapy (CRRT) using the ECLS circuit</h3>
+<p>Continuous renal replacement therapy (CRRT) machines can be connected
+to the ECLS circuit in different ways.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Make sure to create at least a <em>procedure_occurrence</em> entry for the
+therapy itself. E.g., <em><a href="https://athena.ohdsi.org/search-terms/terms/37018292/" target="_blank">37018292</a>, Continuous renal replacement therapy</em>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717911/" target="_blank">36717911</a></td>
+<td>Configuration of renal replacement therapy attached to extracorporeal life support circuit</td>
+<td>observation</td>
+<td><em>observation_concept_id</em> + one of the following as <em>value_as_concept</em></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717912/" target="_blank">36717912</a></td>
+<td>Pre-membrane lung drainage; pre-membrane lung return</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717913/" target="_blank">36717913</a></td>
+<td>Pre-membrane lung drainage; pre-blood pump return</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717914/" target="_blank">36717914</a></td>
+<td>Post-membrane lung drainage; pre-membrane lung return</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717915/" target="_blank">36717915</a></td>
+<td>Post-membrane lung drainage; pre-blood pump return</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ecls-related-devices">ECLS-related devices</h3>
+<p>ECLS circuits can be modified by introducing different devices. If these
+devices are present in your system, create an entry for them. Storing these
+in the <em>device_exposure</em> table was a deliberate design choice for the
+first version of the ECLS CDM, but this may change in a future update.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717855/" target="_blank">36717855</a></td>
+<td>Extracorporeal air bubble/foam detector</td>
+<td>device_exposure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717856/" target="_blank">36717856</a></td>
+<td>Extracorporeal filter</td>
+<td>device_exposure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717857/" target="_blank">36717857</a></td>
+<td>Extracorporeal bladder</td>
+<td>device_exposure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717858/" target="_blank">36717858</a></td>
+<td>Extracorporeal loop</td>
+<td>device_exposure</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="discontinuation-trial">Discontinuation trial</h3>
+<p>When the ECLS circuit is temporarily stopped (without decannulation) to
+assess if the patient can survive without support, you can use this
+concept to record the exact timing.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717921/" target="_blanke">36717921</a></td>
+<td>Extracorporeal life support discontinuation trial</td>
+<td>procedure</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="general-concepts">General concepts</h2>
+<h3 id="general-patient-characteristics">General patient characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>proposed UOM</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3036277/" target="_blank">3036277</a></td>
+<td>Body height</td>
+<td>measurement</td>
+<td>centimeter</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3025315/" target="_blank">3025315</a></td>
+<td>Body weight</td>
+<td>measurement</td>
+<td>kilogram</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3011043/" target="_blank">3011043</a></td>
+<td>Birth weight Measured</td>
+<td>measurement</td>
+<td>kilogram</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3012266/" target="_blank">3012266</a></td>
+<td>Gestational age</td>
+<td>measurement</td>
+<td>week</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="race-ethnicity-and-gender">Race, ethnicity and gender</h3>
+<p>The collection of a patient’s race, ethnicity, and gender is a controversial
+topic. For example, due to historical reasons, race and ethnicity are not
+collected on a regular basis in Germany or Austria when patients are
+admitted to the hospital. If you need data regarding gender, race, or
+ethnicity, follow the official documentation on how to store such information:
+<a href="https://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON">https://ohdsi.github.io/CommonDataModel/cdm54.html#PERSON</a></p>
+<h3 id="units-of-measurement">Units of measurement</h3>
+<p><strong>Conventions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Physical concept</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure</td>
+<td>mmHg [conversion: 1 kPa ≙ 7.5 mmHg] </td>
+</tr>
+<tr>
+<td>Volumetric flow</td>
+<td>l/min</td>
+</tr>
+<tr>
+<td>Length</td>
+<td><em>cm</em>: cannula length, cannula insertion depth, device dimensions measurements</td>
+</tr>
+<tr>
+<td></td>
+<td><em>m</em>: tubing length &gt; 50cm</td>
+</tr>
+<tr>
+<td></td>
+<td><em>in</em>: circuit tubing diameter</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Fr</em>: cannula (outer) diameter</td>
+</tr>
+<tr>
+<td>Area</td>
+<td>m²</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>°C [conversion: (°F - 32) * 5/9 = 0 °C]</td>
+</tr>
+<tr>
+<td>Respiratory</td>
+<td>mbar or cmH2O [they are virtually identical: 1mbar = 1.01972 cmH₂O]</td>
+</tr>
+</tbody>
+</table>
+<p>The following units are often encountered in the field of ECLS.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_code</th>
+<th>concept_name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8876/" target="_blank">8876</a></td>
+<td>mm[Hg]</td>
+<td>millimeter mercury column</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8541/" target="_blank">8541</a></td>
+<td>/min</td>
+<td>per minute</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8698/" target="_blank">8698</a></td>
+<td>L/min</td>
+<td>liter per minute</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/32710/" target="_blank">32710</a></td>
+<td>L/min/m2</td>
+<td>liter per minute per square meter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/586323/" target="_blank">586323</a></td>
+<td>Cel</td>
+<td>degree Celsius</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8582/" target="_blank">8582</a></td>
+<td>cm</td>
+<td>centimeter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9529/" target="_blank">9529</a></td>
+<td>kg</td>
+<td>kilogram</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8554/" target="_blank">8554</a></td>
+<td>%</td>
+<td>percent</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8617/" target="_blank">8617</a></td>
+<td>m2</td>
+<td>square meter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/720858/" target="_blank">720858</a></td>
+<td>mbar</td>
+<td>millibar</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/44777602/" target="_blank">44777602</a></td>
+<td>kPa</td>
+<td>kilopascal</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/44777590/" target="_blank">44777590</a></td>
+<td>cm[H2O]</td>
+<td>centimeter watercolumn</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/720865/" target="_blank">720865</a></td>
+<td>ml/mbar</td>
+<td>milliliter per millibar</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9586/" target="_blank">9586</a></td>
+<td>mol/L</td>
+<td>mole per liter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9579/" target="_blank">9579</a></td>
+<td>mmol/mol</td>
+<td>millimole per mole</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9570/" target="_blank">9570</a></td>
+<td>mL/dL</td>
+<td>milliliter per deciliter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8840/" target="_blank">8840</a></td>
+<td>mg/dL</td>
+<td>milligram per deciliter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8576/" target="_blank">8576</a></td>
+<td>mg</td>
+<td>milligram</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8504/" target="_blank">8504</a></td>
+<td>g</td>
+<td>gram</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9546/" target="_blank">9546</a></td>
+<td>m</td>
+<td>meter</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9327/" target="_blank">9327</a></td>
+<td>[in_i]</td>
+<td>inch (international)</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/9655/" target="_blank">9655</a></td>
+<td>ug</td>
+<td>microgram</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/8511/" target="_blank">8511</a></td>
+<td>wk</td>
+<td>week</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>For a complete list, check out the UCUM vocabulary <a href="https://athena.ohdsi.org/search-terms/terms?domain=Unit&amp;standardConcept=Standard&amp;vocabulary=UCUM&amp;page=1&amp;pageSize=500">here</a>.</p>
+</div>
+<h3 id="vital-parameters">Vital parameters</h3>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>proposed UOM</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3027018/" target="_blank">3027018</a></td>
+<td>Heart rate</td>
+<td>measurement</td>
+<td>/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/21490670/" target="_blank">21490670</a></td>
+<td>Heart rate Intra arterial line by Invasive</td>
+<td>measurement</td>
+<td>/min</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/21490853/" target="_blank">21490853</a></td>
+<td>Invasive Systolic blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/21490852/" target="_blank">21490852</a></td>
+<td>Invasive Mean blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/21490851/" target="_blank">21490851</a></td>
+<td>Invasive Diastolic blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36032120/" target="_blank">36032120</a></td>
+<td>Systolic blood pressure mean</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3027598/" target="_blank">3027598</a></td>
+<td>Mean blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36031214/" target="_blank">36031214</a></td>
+<td>Diastolic blood pressure mean</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3005606/" target="_blank">3005606</a></td>
+<td>Pulmonary artery Systolic blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3028074/" target="_blank">3028074</a></td>
+<td>Pulmonary artery Mean blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3017188/" target="_blank">3017188</a></td>
+<td>Pulmonary artery Diastolic blood pressure</td>
+<td>measurement</td>
+<td>mmHg</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/3020891/" target="_blank">3020891</a></td>
+<td>Body temperature</td>
+<td>measurement</td>
+<td>Cel</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/44809207/" target="_blank">44809207</a></td>
+<td>Target body temperature</td>
+<td>measurement</td>
+<td>Cel</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4196147/" target="_blank">4196147</a></td>
+<td>Peripheral oxygen saturation</td>
+<td>measurement</td>
+<td>%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="proning">Proning</h3>
+<p>Placing a patient in a prone or semi-prone position is often useful in
+severe acute respiratory distress syndrome. If you want to capture a
+patient in a prone position, use the following concepts:</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4196006/" target="_blank">4196006</a></td>
+<td>Placing subject in prone position</td>
+<td>procedure</td>
+<td>plus</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4050473/" target="_blank">4050473</a></td>
+<td>Prone body position</td>
+<td>observation</td>
+<td>= 180°</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4189315/" target="_blank">4189315</a></td>
+<td>Left lateral tilt</td>
+<td>observation</td>
+<td>= right side up</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4213916/" target="_blank">4213916</a></td>
+<td>Right lateral tilt</td>
+<td>observation</td>
+<td>= left side up</td>
+</tr>
+</tbody>
+</table>
+<h3 id="impella">Impella</h3>
+<p>A new approach in ECLS therapy involves combining ECLS with Impella.
+You can use the below concepts for the implantation strategy (<em>procedure_occurrence</em>)
+and use one of the <a href="https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&amp;vocabulary=OMOP+Extension&amp;page=1&amp;pageSize=15&amp;query=Impella&amp;boosts">available</a>
+devices in <em>device_exposure</em>.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>table</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717917/" target="_blank">36717917</a></td>
+<td>Implantation of transvalvular microaxial flow pump</td>
+<td>procedure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717918/" target="_blank">36717918</a></td>
+<td>Open implantation of transvalvular microaxial flow pump</td>
+<td>procedure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717919/" target="_blank">36717919</a></td>
+<td>Percutaneous implantation of transvalvular microaxial flow pump</td>
+<td>procedure</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.instant", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
