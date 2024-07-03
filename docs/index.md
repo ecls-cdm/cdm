@@ -13,12 +13,13 @@ With the growth of technology in medicine, interoperability and quick
 interchange of medical data has become increasingly important. The OMOP
 CDM, one of the major common data models in medicine, provides a
 fantastic framework for data collection but, unfortunately, lacks the
-option to collect ECLS-related data sufficiently.
+option to collect data related to extracorporeal life support (ECLS)
+sufficiently.
 
 With the introduction of specially designed tables tailored to each ECLS
 circuit component, we can overcome this limitation by providing the
 tools necessary to comprehensively collect and process data accumulating
-as soon as patients are put on extracorporeal life support (ECLS).
+as soon as patients are put on ECLS.
 
 The ECLS CDM is...
 
@@ -35,10 +36,10 @@ A detailed documentation for dedicated ETL guidelines will be provided on
 this website in the future.
 
 !!! info
-    Currently (July 2024) , the ECLS CDM allows for the mapping a standard
-    application of ECLS and will be extended to include concepts regarding
-    specialized therapy regimens such as ECPR, trauma-related ECLS therapy or
-    COVID-19 (referred to as “addenda” in the ELSO registry).
+    As of July 2024, the ECLS CDM oversees data collection for standard
+    ECLS applications and is set to be expanded to incorporate specialized
+    therapy regimens, including ECPR, trauma-related ECLS therapy,
+    and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
 
 ## Basic usage
 
