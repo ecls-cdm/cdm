@@ -6,6 +6,6 @@ Partnership Common Data Model (OMOP CDM)**.
 
 We are in the state of finalizing the official documentation which will
 be hosted via GitHub pages. Make sure to visit our repository regularly
-to stay updated on the state of the expansion!
+to stay updated on the state of the expansion and its first official release!
 
 *July 2024, The ECLS CDM research group*

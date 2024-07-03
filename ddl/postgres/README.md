@@ -8,4 +8,4 @@
       postgres@myserver:/../ddl/postgres$ psql -d <mydatabase> -f install.sql -v ON_ERROR_STOP=1
       ```
 
-Alternatively load the files seperately.
+Alternatively load the files separately.
