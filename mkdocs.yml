@@ -1,0 +1,71 @@
+site_name: ECLS CDM
+repo_url: https://github.com/ecls-cdm/cdm
+repo_name: ecls-cdm/cdm
+nav:
+  - Home: index.md
+  - Structure:
+    - structure/index.md
+    - Core tables:
+      - ecls_run: structure/ecls_run.md
+      - ecls_circuit: structure/ecls_circuit.md
+      - ecls_mode: structure/ecls_mode.md
+      - ecls_blood_pump: structure/ecls_blood_pump.md
+      - ecls_cannula: structure/ecls_cannula.md
+      - ecls_console: structure/ecls_console.md
+      - ecls_membrane_lung: structure/ecls_membrane_lung.md
+      - ecls_temperature_regulation_device: structure/ecls_temperature_regulation_device.md
+    - Support tables:
+      - ecls_circuit_component: structure/ecls_circuit_component.md
+      - ecls_blood_pump_material: structure/ecls_blood_pump_material.md
+      - ecls_cannula_material: structure/ecls_cannula_material.md
+      - ecls_console_material: structure/ecls_console_material.md
+      - ecls_membrane_lung_material: structure/ecls_membrane_lung_material.md
+      - ecls_temperature_regulation_device_material: structure/ecls_temperature_regulation_device_material.md
+  - User Guide:
+    - userguide/index.md
+    - Installation: userguide/installation.md
+    - Use cases: userguide/usecases.md
+    - Concepts: userguide/concepts.md
+    - Tracking materials: userguide/trackingmaterials.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  font:
+    text: Source Sans 3
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - toc:
+      toc_depth: 4
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - glightbox
