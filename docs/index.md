@@ -36,7 +36,7 @@ A detailed documentation for dedicated ETL guidelines will be provided on
 this website in the future.
 
 !!! info
-    As of July 2024, the ECLS CDM oversees data collection for standard
+    As of August 2024, the ECLS CDM oversees data collection for standard
     ECLS applications and is set to be expanded to incorporate specialized
     therapy regimens, including ECPR, trauma-related ECLS therapy,
     and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
@@ -81,6 +81,12 @@ In contrast, the **ECLS CDM** only handles data regarding:
 - components, such as cannulas, membrane lungs, consoles, temperature
   regulation devices and blood pumps
 - materials of the single components
+
+**Other useful resources** if you are new to OHDSI are:
+
+- [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) - Intended to become a central knowledge repository for all OHDSI-related processes.
+- [OHDSI Website](https://www.ohdsi.org/) - Your entry into the world of OHDSI.
+- [OHDSI Forums](https://forums.ohdsi.org/) - If you have questions, OHDSI's active community with multiple people from various backgrounds are ready to help.
 
 ## Terminology
 

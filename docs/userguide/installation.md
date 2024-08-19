@@ -1,3 +1,5 @@
+# Installation
+
 Installing the ECLS CDM expansion involves some quick and simple steps:
 
 1. Make sure, that your version of the OMOP CDM is up-to-date and

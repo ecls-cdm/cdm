@@ -93,7 +93,7 @@ more-membrane-lungs.png){:style="height:300px;"}
 ## Exchanging a cannula
 
 If one of your cannulas needs to be removed and replaced with a new cannula,
-stop the old cannula, select an appropriate *removal_concept_id*, and add a new cannula. M
+stop the old cannula, select an appropriate *removal_concept_id*, and add a new cannula.
 
 
 !!! info "Complication"
