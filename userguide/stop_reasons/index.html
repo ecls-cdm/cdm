@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../usecases/">
+      
+      
+        <link rel="next" href="../concepts/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Complications - ECLS CDM</title>
+        <title>Stop reasons - ECLS CDM</title>
       
     
     
@@ -76,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#when-the-ecls-is-stopped" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Complications
+              Stop reasons
             
           </span>
         </div>
@@ -243,10 +252,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -857,6 +868,8 @@
       
   
   
+    
+  
   
   
     
@@ -874,19 +887,24 @@
       
         
       
+        
+      
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -902,13 +920,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             User Guide
@@ -954,6 +972,37 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Stop reasons
+  </span>
+  
+
+      </a>
+      
     </li>
   
 
@@ -1065,6 +1114,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1082,12 +1133,247 @@
   
 
 
-  <h1>Complications</h1>
-
-<p>We are waiting for a new vocabulary release (end of August 2024) to
-rework this section and provide clear instructions on how to use
-complications and the <em>.stop_reason_concept_id</em> attributes spread across
-all core tables.</p>
+<h1 id="when-the-ecls-is-stopped">When the ECLS is stopped...</h1>
+<p>There are several reasons why ECLS might be stopped. They involve
+change in patient status, disease progression, resource limitations and
+adherence to local protocols, patient or family wishes or sometimes 
+complications with the ECLS circuit and/or its components.</p>
+<p>Collecting these data is essential for improving patient outcomes,
+guiding clinical practice, and refining protocols, ultimately leading
+to more efficient, safer and targeted treatment approaches.</p>
+<p><strong>Stop reasons</strong> are collected for each <strong>core table</strong>. 
+Depending on the core table, additional concepts specific to this
+table are available. Stop reasons are collected using the 
+<em>.stop_reason_concept_id</em> column of each respective table. For 
+stop reasons that are not complications refer to the structure
+documentation.</p>
+<p>If a complication is the reason for stopping a circuit and/or component
+choose the most specific concept and use it as <em>.stop_reason_concept_id</em>
+for every component involved.</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717814/" target="_blank">36717814</a></td>
+<td><strong>Acute obstruction to extracorporeal blood flow</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717815/" target="_blank">36717815</a></td>
+<td><strong>Increasing resistance to extracorporeal blood flow</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717816/" target="_blank">36717816</a></td>
+<td><strong>Air in extracorporeal life support circuit or component</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717817/" target="_blank">36717817</a></td>
+<td><strong>Hemorrhage of extracorporeal life support vascular access</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717818/" target="_blank">36717818</a></td>
+<td><strong>Misplacement of extracorporeal life support cannula</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717820/" target="_blank">36717820</a></td>
+<td><strong>Decreased efficiency of extracorporeal membrane lung</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717821/" target="_blank">36717821</a></td>
+<td><strong>Recirculation</strong></td>
+<td>If recirculation is responsible for the exchange of the circuit and/or component it is considered a complication. If recirculation is observed but no direct intervention on the circuit is necessary, it should still be collected as <em>observation</em>.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717819/" target="_blank">36717819</a></td>
+<td><strong>Accidental dislodgement of extracorporeal life support component</strong></td>
+<td>Accidental dislodgment refers to the unintended displacement or removal of a component from its intended position.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/740911/" target="_blank">740911</a></td>
+<td>Accidental dislodgement of extracorporeal life support blood pump</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/740912/" target="_blank">740912</a></td>
+<td>Accidental dislodgement of extracorporeal life support cannula</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/740913/" target="_blank">740913</a></td>
+<td>Accidental dislodgement of extracorporeal life support console</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/740914/" target="_blank">740914</a></td>
+<td>Accidental dislodgement of extracorporeal life support membrane lung</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/740915/" target="_blank">740915</a></td>
+<td>Accidental dislodgement of extracorporeal life support temperature regulation device</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717822/" target="_blank">36717822</a></td>
+<td><strong>Coagulopathy caused by extracorporeal life support circuit or component</strong></td>
+<td>Coagulopathy is responsible for the stop or exchange of the circuit or component.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717823/" target="_blank">36717823</a></td>
+<td>Coagulopathy caused by extracorporeal life support blood pump</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717825/" target="_blank">36717825</a></td>
+<td>Coagulopathy caused by extracorporeal life support cannula</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717824/" target="_blank">36717824</a></td>
+<td>Coagulopathy caused by extracorporeal life support circuit</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717826/" target="_blank">36717826</a></td>
+<td>Coagulopathy caused by extracorporeal membrane lung</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717827/" target="_blank">36717827</a></td>
+<td><strong>Hemolysis caused by extracorporeal life support circuit or component</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717828/" target="_blank">36717828</a></td>
+<td>Hemolysis caused by extracorporeal life support blood pump</td>
+<td>Hemolysis is responsible for the stop or exchange of the circuit or component.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717830/" target="_blank">36717830</a></td>
+<td>Hemolysis caused by extracorporeal life support cannula</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717829/" target="_blank">36717829</a></td>
+<td>Hemolysis caused by extracorporeal life support circuit</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717831/" target="_blank">36717831</a></td>
+<td>Hemolysis caused by extracorporeal membrane lung</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717832/" target="_blank">36717832</a></td>
+<td><strong>Blood clot in extracorporeal life support circuit or component</strong></td>
+<td>A blood clot is responsible for the stop or exchange of the circuit or component.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717833/" target="_blank">36717833</a></td>
+<td>Blood clot in extracorporeal life support blood pump</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717835/" target="_blank">36717835</a></td>
+<td>Blood clot in extracorporeal life support cannula</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717834/" target="_blank">36717834</a></td>
+<td>Blood clot in extracorporeal life support circuit</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717836/" target="_blank">36717836</a></td>
+<td>Blood clot in extracorporeal membrane lung</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717837/" target="_blank">36717837</a></td>
+<td><strong>Extracorporeal life support device failure</strong></td>
+<td>Use the following concepts for any technical malfunction that is not a loss of the structural integrity of the component.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717839/" target="_blank">36717839</a></td>
+<td>Extracorporeal life support blood pump failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717841/" target="_blank">36717841</a></td>
+<td>Extracorporeal life support cannula failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717842/" target="_blank">36717842</a></td>
+<td>Extracorporeal life support circuit failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717843/" target="_blank">36717843</a></td>
+<td>Extracorporeal life support console failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717840/" target="_blank">36717840</a></td>
+<td>Extracorporeal life support temperature regulation device failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717838/" target="_blank">36717838</a></td>
+<td>Extracorporeal membrane lung failure</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717844/" target="_blank">36717844</a></td>
+<td><strong>Impaired structural integrity of extracorporeal life support circuit or component</strong></td>
+<td>In contrast to any technical malfunction, an impaired structural integrity usually means a physical break of the component.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/740918/" target="_blank">740918</a></td>
+<td>Impaired structural integrity of extracorporeal life support blood pump</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/740919/" target="_blank">740919</a></td>
+<td>Impaired structural integrity of extracorporeal life support cannula</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/740920/" target="_blank">740920</a></td>
+<td>Impaired structural integrity of extracorporeal life support membrane lung</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717845/" target="_blank">36717845</a></td>
+<td>Rupture of extracorporeal life support circuit tubing</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/search/36717846/" target="_blank">36717846</a></td>
+<td>Raceway rupture of extracorporeal life support circuit tubing</td>
+<td>A raceway rupture can occur using traditional roller-pump setups. Typically, modern circuits use a centrifugal magnetic pump, whereas roller pumps are more frequent in neonatal ECLS.</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Parent/high-level concepts are in bold.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
