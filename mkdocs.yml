@@ -25,6 +25,7 @@ nav:
     - userguide/index.md
     - Installation: userguide/installation.md
     - Use cases: userguide/usecases.md
+    - Stop reasons: userguide/stop_reasons.md
     - Concepts: userguide/concepts.md
     - Tracking materials: userguide/trackingmaterials.md
   - Contributing: contributing.md
@@ -60,6 +61,7 @@ markdown_extensions:
   - tables
   - admonition
   - attr_list
+  - footnotes
   - toc:
       toc_depth: 4
   - md_in_html

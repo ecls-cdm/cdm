@@ -39,8 +39,6 @@ Choose the right concept to describe, why the temperature regulation device was 
 | [40483850](https://athena.ohdsi.org/search-terms/terms/40483850/){:target="_blank"} | Treatment changed                                                 | Indicating that the membrane lung was not necessary anymore.            |
 | [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}     | Dead                                                              |                                                                         |
 | [4154766](https://athena.ohdsi.org/search-terms/terms/4154766){:target="_blank"}    | Moribund                                                          |                                                                         |
-| [36717819](https://athena.ohdsi.org/search-terms/terms/36717819/){:target="_blank"} | Accidental dislodgement of extracorporeal life support component  |                                                                         |
-| [36717840](https://athena.ohdsi.org/search-terms/terms/36717840/){:target="_blank"} | Extracorporeal life support temperature regulation device failure |                                                                         |
 | [44790553](https://athena.ohdsi.org/search-terms/terms/44790553/){:target="_blank"} | Following protocol                                                | If the center demands a change/stop of the component, use this concept. |
 | [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="_blank"} | End of product life-cycle                                         |                                                                         |
 

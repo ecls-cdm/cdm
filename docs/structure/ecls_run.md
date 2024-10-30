@@ -3,10 +3,10 @@ ECLS.
 
 !!! info "Definition of a "run""
 
-    A run is defined as an exposure to ECLS thearpy and the beginning of
+    A run is defined as an exposure to ECLS therapy and the beginning of
     blood flow through the circuit until the removal of the last cannula.
     This definition takes into account that patients can be left without
-    support but cannulas are left in place to take them back on support
+    support but cannulas are kept in place to take them back on support
     quickly, if a long-term separation from the circuit is not successful.
 
 | Column name             | Required | Data Type                             |

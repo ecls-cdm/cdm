@@ -1,4 +1,4 @@
-# Concepts
+# ECLS Concepts
 
 We have gathered concepts commonly used in the context of ECLS. These
 should assist you in implementing the OMOP CDM and the ECLS CDM expansion

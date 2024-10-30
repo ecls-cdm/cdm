@@ -20,7 +20,7 @@ Feel free to help us with any of those subjects:
 - [ ] Providing more DDLs for different RDBMS (MariaDB, MySQL, etc.)
 - [ ] Improving material tables and adding new items to them.
 - [ ] Improving the documentation.
-- [ ] Setting up Issue templates.
+- [ ] Setting up GitHub Issue templates.
 - [ ] Finding bugs and inconsistencies!
 - [ ] And many more...
 
