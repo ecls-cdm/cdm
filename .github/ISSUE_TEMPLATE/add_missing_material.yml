@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for taking your time to help improve this project!
         Follow these steps to successfully submit your proposal:
-          1. Download the [template .csv-file](../blob/main/.github/ISSUE_TEMPLATE/1.0.0_add_material_template.xlsx).
+          1. Download the [1.0.0_add_material_template.xlsx template .csv-file](../blob/main/.github/ISSUE_TEMPLATE/1.0.0_add_material_template.xlsx).
           2. Fill out the .csv-file following the instructions mentioned within the first worksheet.
           3. Export the material you want to submit to a .csv-based format (optimally with semicolons as separators).
           4. Paste the raw .csv-content to the textfield below.
@@ -36,7 +36,7 @@ body:
       options:
         - label: I confirm, that I have followed the instructions as mentioned above.
           required: true
-        - label: I follow this projects Code of Conduct.
+        - label: I confirm, that I follow this projects Code of Conduct.
           required: true
-        - label: I am not submitting any illegal documents or information that I am not allowed to share.
+        - label: I confirm, that I am not submitting any illegal documents or information that I am not allowed to share.
           required: true
