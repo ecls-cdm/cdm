@@ -1468,93 +1468,33 @@ For ECPR use the <em>Resuscitation</em> concept.</p>
 <thead>
 <tr>
 <th>concept_id</th>
-<th>concept_code</th>
 <th>concept_name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/320136/" target="_blank">320136</a></td>
-<td>50043002</td>
 <td>Disorder of respiratory system</td>
 </tr>
 <tr>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/134057/" target="_blank">134057</a></td>
-<td>49601007</td>
 <td>Disorder of cardiovascular system</td>
 </tr>
 <tr>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/4205502/" target="_blank">4205502</a></td>
-<td>439569004</td>
 <td>Resuscitation</td>
 </tr>
 <tr>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/440921/" target="_blank">440921</a></td>
-<td>417746004</td>
 <td>Traumatic injury</td>
 </tr>
 </tbody>
 </table>
 <h2 id="stop_reason_concept_id">.stop_reason_concept_id</h2>
 <p>The foreign key to the <em>concept</em> table. <br>
-The run is stopped due to various reasons.</p>
-<p><strong>Allowed concepts:</strong></p>
-<table>
-<thead>
-<tr>
-<th>concept_id</th>
-<th>concept_name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4149524/" target="_blank">4149524</a></td>
-<td>Patient's condition improved</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/434489/" target="_blank">434489</a></td>
-<td>Dead</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4154766/" target="_blank">4154766</a></td>
-<td>Moribund</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/434263/" target="_blank">434263</a></td>
-<td>Complication of extracorporeal circulation</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4337306/" target="_blank">4337306</a></td>
-<td>Implantation of ventricular assist device</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4272324/" target="_blank">4272324</a></td>
-<td>Cardiopulmonary bypass operation</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4137127/" target="_blank">4137127</a></td>
-<td>Transplantation of heart</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4337138/" target="_blank">4337138</a></td>
-<td>Transplant of lung</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4138959/" target="_blank">4138959</a></td>
-<td>Heart-lung transplant with recipient cardiectomy-pneumonectomy</td>
-</tr>
-</tbody>
-</table>
-<p>If the run was stopped completely because of a complication of an ECLS component, make sure to capture the respective complication. <em>434263, Complication of extracorporeal circulation</em> serves as a high-level concept.</p>
-<div class="admonition info">
-<p class="admonition-title">Death</p>
-<p>If the patient dies, a respective entry in the OMOP CDM <em>death</em> table
-is necessary. Sometimes, ECLS support is withdrawn for a <em>Moribund</em> patient,
-because death is expected. The major difference between <em>Dead</em> and
-<em>Moribund</em> regarding data capture is the timestamp of <em>death_datetime</em>.</p>
-<p>The patient dies "on ECMO" =&gt; <em>Dead</em>: death.death_datetime == ecls_run.stop_datetime <br>
-The patient is decannulated and dies shortly afterwards =&gt; <em>Moribund</em>: death.death_datetime &gt; ecls_run.stop_datetime</p>
-</div>
+Record the reason why the run was stopped.</p>
+<p>Refer to <a href="../../userguide/stop_reasons/">Stop reasons</a> for details on
+stopping the run, circuit and/or component properly.</p>
 
 
 

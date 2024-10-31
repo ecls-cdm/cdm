@@ -993,6 +993,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Stop reasons
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1002,6 +1013,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#without-complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      ...without complications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      ...with complications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-stop-reasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      General stop reasons
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complications
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1117,6 +1183,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#without-complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      ...without complications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      ...with complications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-stop-reasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      General stop reasons
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complications
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1136,20 +1246,110 @@
 <h1 id="when-the-ecls-is-stopped">When the ECLS is stopped...</h1>
 <p>There are several reasons why ECLS might be stopped. They involve
 change in patient status, disease progression, resource limitations and
-adherence to local protocols, patient or family wishes or sometimes 
+adherence to local protocols, patient or family wishes or sometimes
 complications with the ECLS circuit and/or its components.</p>
 <p>Collecting these data is essential for improving patient outcomes,
 guiding clinical practice, and refining protocols, ultimately leading
 to more efficient, safer and targeted treatment approaches.</p>
-<p><strong>Stop reasons</strong> are collected for each <strong>core table</strong>. 
+<p><strong>Stop reasons</strong> are collected for each <strong>core table</strong>.
 Depending on the core table, additional concepts specific to this
-table are available. Stop reasons are collected using the 
-<em>.stop_reason_concept_id</em> column of each respective table. For 
+table are available. Stop reasons are collected using the
+<em>.stop_reason_concept_id</em> column of each respective table. For
 stop reasons that are not complications refer to the structure
 documentation.</p>
 <p>If a complication is the reason for stopping a circuit and/or component
 choose the most specific concept and use it as <em>.stop_reason_concept_id</em>
 for every component involved.</p>
+<h2 id="without-complications">...without complications</h2>
+<p>When an ECLS run is stopped and none of the circuit components or the
+circuit itself were replaced, each corresponding database entry (run,
+circuit, components) should have the same <em>.stop_reason_concept_id</em>.</p>
+<h2 id="with-complications">...with complications</h2>
+<p>Complications on a circuit or component level might lead to an exchange
+of the faulty component as well as other parts of the circuit. Each
+affected component should have the same <em>.stop_reason_concept_id</em>.</p>
+<h2 id="general-stop-reasons">General stop reasons</h2>
+<p>If no complication occurs, you can choose one of the following stop reasons
+to end your run for your respective database entries (run,
+circuit, components).</p>
+<table>
+<thead>
+<tr>
+<th>concept_id</th>
+<th>concept_name</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4149524/" target="_blank">4149524</a></td>
+<td>Patient's condition improved</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/434489/" target="_blank">434489</a></td>
+<td>Dead</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4154766/" target="_blank">4154766</a></td>
+<td>Moribund</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4337306/" target="_blank">4337306</a></td>
+<td>Implantation of ventricular assist device</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4272324/" target="_blank">4272324</a></td>
+<td>Cardiopulmonary bypass operation</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4137127/" target="_blank">4137127</a></td>
+<td>Transplantation of heart</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4337138/" target="_blank">4337138</a></td>
+<td>Transplant of lung</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4138959/" target="_blank">4138959</a></td>
+<td>Heart-lung transplant with recipient cardiectomy-pneumonectomy</td>
+<td>This concept should be used to end a run and its circuit and components.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/40483850/" target="_blank">40483850</a></td>
+<td>Treatment changed</td>
+<td>Indicating that the circuit or component was not necessary anymore. This concept should not be used as concept to end a run but only for the circuit and/or components. (e.g.: switch from a double-circuit configuration to a single-circuit configuration or removal of one venous cannula in a VV-A (to V-A) configuration because of improved pulmonary function)</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/44790553/" target="_blank">44790553</a></td>
+<td>Following protocol</td>
+<td>If the center demands a change/stop of the run, circuit and/or component, use this concept.</td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/36717877/" target="_blank">36717877</a></td>
+<td>End of product life-cycle.</td>
+<td>This concept should not be used as concept to end a run but only for the circuit and/or components.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Death</p>
+<p>If the patient dies, a respective entry in the OMOP CDM <em>death</em> table
+is necessary. Sometimes, ECLS support is withdrawn for a <em>Moribund</em> patient,
+because death is expected. The major difference between <em>Dead</em> and
+<em>Moribund</em> regarding data capture is the timestamp of <em>death_datetime</em>.</p>
+<p>The patient dies "on ECLS"<br>
+<em>Dead</em>: death.death_datetime = ecls_run.stop_datetime <br></p>
+<p>The patient is decannulated and dies shortly afterwards<br>
+<em>Moribund</em>: death.death_datetime &gt; ecls_run.stop_datetime</p>
+</div>
+<h2 id="complications">Complications</h2>
 <table>
 <thead>
 <tr>
@@ -1188,6 +1388,11 @@ for every component involved.</p>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/36717820/" target="_blank">36717820</a></td>
 <td><strong>Decreased efficiency of extracorporeal membrane lung</strong></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="https://athena.ohdsi.org/search-terms/terms/4018050/" target="_blank">4018050</a></td>
+<td><strong>Localized infection</strong></td>
+<td>Wound infection at cannula entry site. If a change of the cannula is necessary due to infection at the cannula entry site, stop the removed cannula using this concept.</td>
 </tr>
 <tr>
 <td><a href="https://athena.ohdsi.org/search-terms/terms/36717821/" target="_blank">36717821</a></td>

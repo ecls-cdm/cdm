@@ -1433,49 +1433,9 @@ circuit.</p>
 <p>The foreign key to the <em>person</em> table.</p>
 <h2 id="stop_reason_concept_id">.stop_reason_concept_id</h2>
 <p>The foreign key to the <em>concept</em> table. <br>
-Store information, as to why the blood pump was stopped.</p>
-<p><strong>Allowed concepts:</strong></p>
-<table>
-<thead>
-<tr>
-<th>concept_id</th>
-<th>concept_name</th>
-<th>comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4149524/" target="_blank">4149524</a></td>
-<td>Patient's condition improved</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/40483850/" target="_blank">40483850</a></td>
-<td>Treatment changed</td>
-<td>Indicating that the blood pump was not necessary anymore.</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/434489/" target="_blank">434489</a></td>
-<td>Dead</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/4154766/" target="_blank">4154766</a></td>
-<td>Moribund</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/44790553/" target="_blank">44790553</a></td>
-<td>Following protocol</td>
-<td>If the center demands a change/stop of the component, use this concept.</td>
-</tr>
-<tr>
-<td><a href="https://athena.ohdsi.org/search-terms/terms/36717877/" target="_blank">36717877</a></td>
-<td>End of product life-cycle</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Record the reason why the blood pump was stopped.</p>
+<p>Refer to <a href="../../userguide/stop_reasons/">Stop reasons</a> for details on
+stopping the run, circuit and/or component properly.</p>
 <h2 id="material_id">.material_id</h2>
 <p>The foreign key to the <em>ecls_blood_pump_material</em> table.</p>
 <h2 id="sn">.sn</h2>
