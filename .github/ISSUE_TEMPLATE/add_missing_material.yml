@@ -1,0 +1,42 @@
+name: Add new material
+description: Propose the addition of new materials.
+title: "[Material]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking your time to help improve this project!
+        Follow these steps to successfully submit your proposal:
+          1. Download the [template .csv-file](1.0.0_add_material_template.xlsx).
+          2. Fill out the .csv-file following the instructions mentioned within the first worksheet.
+          3. Export the material you want to submit to a .csv-based format (optimally with semicolons as separators).
+          4. Paste the raw .csv-content to the textfield below.
+          5. Describe your proposal below.
+  - type: textarea
+    id: description
+    attributes:
+      label: Let us know about the material you want to see added to this project.
+      description: Provide further details (such as official instructions for use [IFU], PDFs, etc.). This will help us process your request more quickly.
+    validations:
+      required: true
+  - type: textarea
+    id: csv-content
+    attributes:
+      label: Paste your .csv-content here
+      description: Please copy and paste the material you would like to see added in the appropriate format.
+      value: |
+        Component Type; Manufacturer;Component Name/Description; Diameter (F); Length (cm), Connector; Coating; REF, (Basic) UDI-DI);ELSO <component>ID; ELSO ManufacturerID; Internet link; Comment
+        cannula;my_manufacturer;my_component_name;...
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Please confirm the following
+      options:
+        - label: I confirm, that I have followed the instructions as mentioned above.
+          required: true
+        - label: I follow this projects Code of Conduct.
+          required: true
+        - label: I am not submitting any illegal documents or information that I am not allowed to share.
+          required: true
