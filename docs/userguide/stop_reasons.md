@@ -20,6 +20,56 @@ If a complication is the reason for stopping a circuit and/or component
 choose the most specific concept and use it as *.stop_reason_concept_id*
 for every component involved.
 
+## ...without complications
+
+When an ECLS run is stopped and none of the circuit components or the
+circuit itself were replaced, each corresponding database entry (run,
+circuit, components) should have the same *.stop_reason_concept_id*.
+
+
+## ...with complications
+
+Complications on a circuit or component level might lead to an exchange
+of the faulty component as well as other parts of the circuit. Each
+affected component should have the same *.stop_reason_concept_id*.
+
+
+
+## General stop reasons
+
+If no complication occurs, you can choose one of the following stop reasons
+to end your run for your respective database entries (run,
+circuit, components).
+
+| concept_id                                                                          | concept_name                                                   | comment                                                                                                                                                                 |
+|-------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [4149524](https://athena.ohdsi.org/search-terms/terms/4149524/){:target="_blank"}   | Patient's condition improved                                   | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}     | Dead                                                           | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4154766](https://athena.ohdsi.org/search-terms/terms/4154766/){:target="_blank"}   | Moribund                                                       | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4337306](https://athena.ohdsi.org/search-terms/terms/4337306/){:target="_blank"}   | Implantation of ventricular assist device                      | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4272324](https://athena.ohdsi.org/search-terms/terms/4272324/){:target="_blank"}   | Cardiopulmonary bypass operation                               | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4137127](https://athena.ohdsi.org/search-terms/terms/4137127/){:target="_blank"}   | Transplantation of heart                                       | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4337138](https://athena.ohdsi.org/search-terms/terms/4337138/){:target="_blank"}   | Transplant of lung                                             | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [4138959](https://athena.ohdsi.org/search-terms/terms/4138959/){:target="_blank"}   | Heart-lung transplant with recipient cardiectomy-pneumonectomy | This concept should be used to end a run and its circuit and components.                                                                                                                                                                        |
+| [40483850](https://athena.ohdsi.org/search-terms/terms/40483850/){:target="_blank"} | Treatment changed                                              | Indicating that the circuit or component was not necessary anymore. This concept should not be used as concept to end a run but only for the circuit and/or components. (e.g.: switch from a double-circuit configuration to a single-circuit configuration or removal of one venous cannula in a VV-A (to V-A) configuration because of improved pulmonary function) |
+| [44790553](https://athena.ohdsi.org/search-terms/terms/44790553/){:target="_blank"} | Following protocol                                             | If the center demands a change/stop of the run, circuit and/or component, use this concept.                                                                             |
+| [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="_blank"} | End of product life-cycle.                                     | This concept should not be used as concept to end a run but only for the circuit and/or components.                                                                     |
+
+
+!!! info "Death"
+    If the patient dies, a respective entry in the OMOP CDM *death* table
+    is necessary. Sometimes, ECLS support is withdrawn for a *Moribund* patient,
+    because death is expected. The major difference between *Dead* and
+    *Moribund* regarding data capture is the timestamp of *death_datetime*.
+
+    The patient dies "on ECLS"<br>
+    *Dead*: death.death_datetime = ecls_run.stop_datetime <br>
+
+    The patient is decannulated and dies shortly afterwards<br>
+    *Moribund*: death.death_datetime > ecls_run.stop_datetime
+
+## Complications
+
 | concept_id                                                                           | concept_name[^1]                                                                      | comment                                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [36717814](https://athena.ohdsi.org/search-terms/terms/36717814/){:target="_blank"}  | **Acute obstruction to extracorporeal blood flow**                                    |                                                                                                                                                                                                                                                       |
@@ -28,6 +78,7 @@ for every component involved.
 | [36717817](https://athena.ohdsi.org/search-terms/terms/36717817/){:target="_blank"}  | **Hemorrhage of extracorporeal life support vascular access**                         |                                                                                                                                                                                                                                                       |
 | [36717818](https://athena.ohdsi.org/search-terms/terms/36717818/){:target="_blank"}  | **Misplacement of extracorporeal life support cannula**                               |                                                                                                                                                                                                                                                       |
 | [36717820](https://athena.ohdsi.org/search-terms/terms/36717820/){:target="_blank"}  | **Decreased efficiency of extracorporeal membrane lung**                              |                                                                                                                                                                                                                                                       |
+| [4018050](https://athena.ohdsi.org/search-terms/terms/4018050/){:target="_blank"}    | **Localized infection**                                                               | Wound infection at cannula entry site. If a change of the cannula is necessary due to infection at the cannula entry site, stop the removed cannula using this concept.                                                                               |
 | [36717821](https://athena.ohdsi.org/search-terms/terms/36717821/){:target="_blank"}  | **Recirculation**                                                                     | If recirculation is responsible for the exchange of the circuit and/or component it is considered a complication. If recirculation is observed but no direct intervention on the circuit is necessary, it should still be collected as *observation*. |
 | [36717819](https://athena.ohdsi.org/search-terms/terms/36717819/){:target="_blank"}  | **Accidental dislodgement of extracorporeal life support component**                  | Accidental dislodgment refers to the unintended displacement or removal of a component from its intended position.                                                                                                                                    |
 | [740911](https://athena.ohdsi.org/search-terms/terms/740911/){:target="_blank"}      | Accidental dislodgement of extracorporeal life support blood pump                     |                                                                                                                                                                                                                                                       |

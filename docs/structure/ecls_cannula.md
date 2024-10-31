@@ -175,18 +175,10 @@ use the type of vascular closure device as a proxy.
 The foreign key to the *concept* table. <br>
 Choose the right concept to describe, why the cannula was removed.
 
-**Allowed concepts:**
+Record the reason why the cannula was stopped.
 
-| concept_id                                                                          | concept_name                                                                      | comment                                                                          |
-|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [4149524](https://athena.ohdsi.org/search-terms/terms/4149524/){:target="_blank"}   | Patient's condition improved                                                      |                                                                                  |
-| [40483850](https://athena.ohdsi.org/search-terms/terms/40483850/){:target="_blank"} | Treatment changed                                                                 | Indicating that the blood pump was not necessary anymore.                        |
-| [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}     | Dead                                                                              |                                                                                  |
-| [4154766](https://athena.ohdsi.org/search-terms/terms/4154766/){:target="_blank"}   | Moribund                                                                          |                                                                                  |
-| [44790553](https://athena.ohdsi.org/search-terms/terms/44790553/){:target="_blank"} | Following protocol                                                                | If the center demands a change/stop of the component, use this concept.          |
-| [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="_blank"} | End of product life-cycle                                                         |                                                                                  |
-| [4018050](https://athena.ohdsi.org/search-terms/terms/4018050/){:target="_blank"}   | Localized infection                                                               | Wound infection at cannula entry site                                             |
-
+Refer to [Stop reasons](../userguide/stop_reasons.md) for details on
+stopping the run, circuit and/or component properly.
 
 ## .material_id
 The foreign key to the *ecls_cannula_material* table.

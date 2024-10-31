@@ -35,20 +35,10 @@ The foreign key to the *person* table.
 
 ## .stop_reason_concept_id
 The foreign key to the *concept* table. <br>
-Since the console is not in contact with the blood phase of the system
-the number of complications is reduced for this table.
+Record the reason why the console was stopped.
 
-**Allowed concepts:**
-
-| concept_id                                                                          | concept_name                                                     | comment                                                                 |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [4149524](https://athena.ohdsi.org/search-terms/terms/4149524/){:target="_blank"}   | Patient's condition improved                                     |                                                                         |
-| [40483850](https://athena.ohdsi.org/search-terms/terms/40483850/){:target="_blank"} | Treatment changed                                                | Indicating that the cannula was not necessary anymore.                  |
-| [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}     | Dead                                                             |                                                                         |
-| [4154766](https://athena.ohdsi.org/search-terms/terms/4154766/){:target="_blank"}   | Moribund                                                         |                                                                         |
-| [44790553](https://athena.ohdsi.org/search-terms/terms/44790553/){:target="_blank"} | Following protocol                                               | If the center demands a change/stop of the component, use this concept. |
-| [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="_blank"} | End of product life-cycle                                        |                                                                         |
-
+Refer to [Stop reasons](../userguide/stop_reasons.md) for details on
+stopping the run, circuit and/or component properly.
 
 ## .material_id
 The foreign key field to the ECLS CDM *ecls_console_material* table.

@@ -68,13 +68,7 @@ Various priming solutions are used when preparing the ECLS circuit.
 
 ## .stop_reason_concept_id
 The foreign key to the *concept* table. <br>
-Collect the reason why the circuit was stopped.
+Record the reason why the circuit was stopped.
 
-| concept_id                                                                          | concept_name                                                                      | comment                                                                          |
-|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [4149524](https://athena.ohdsi.org/search-terms/terms/4149524/){:target="_blank"}   | Patient's condition improved                                                      |                                                                                  |
-| [40483850](https://athena.ohdsi.org/search-terms/terms/40483850/){:target="_blank"} | Treatment changed                                                                 | Indicating that the blood pump was not necessary anymore.                        |
-| [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}     | Dead                                                                              |                                                                                  |
-| [4154766](https://athena.ohdsi.org/search-terms/terms/4154766/){:target="_blank"}   | Moribund                                                                          |                                                                                  |
-| [44790553](https://athena.ohdsi.org/search-terms/terms/44790553/){:target="_blank"} | Following protocol                                                                | If the center demands a change/stop of the component, use this concept.          |
-| [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="_blank"} | End of product life-cycle                                                         |                                                                                  |
+Refer to [Stop reasons](../userguide/stop_reasons.md) for details on
+stopping the run, circuit and/or component properly.

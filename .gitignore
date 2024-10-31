@@ -1,5 +1,8 @@
 # MacOS
 .DS_Store
 
-#MkDocs documentation
+# MkDocs documentation
 site/
+
+# Python
+__pycache__

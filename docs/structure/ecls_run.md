@@ -75,40 +75,17 @@ was put on ECLS. Child concepts might also be used.
 
 **Allowed concepts (including child concepts):**
 
-| concept_id                                                                        | concept_code | concept_name                      |
-|-----------------------------------------------------------------------------------|--------------|-----------------------------------|
-| [320136](https://athena.ohdsi.org/search-terms/terms/320136/){:target="_blank"}   | 50043002     | Disorder of respiratory system    |
-| [134057](https://athena.ohdsi.org/search-terms/terms/134057/){:target="_blank"}   | 49601007     | Disorder of cardiovascular system |
-| [4205502](https://athena.ohdsi.org/search-terms/terms/4205502/){:target="_blank"} | 439569004    | Resuscitation                     |
-| [440921](https://athena.ohdsi.org/search-terms/terms/440921/){:target="_blank"}   | 417746004    | Traumatic injury                  |
+| concept_id                                                                        | concept_name                      |
+|-----------------------------------------------------------------------------------|-----------------------------------|
+| [320136](https://athena.ohdsi.org/search-terms/terms/320136/){:target="_blank"}   | Disorder of respiratory system    |
+| [134057](https://athena.ohdsi.org/search-terms/terms/134057/){:target="_blank"}   | Disorder of cardiovascular system |
+| [4205502](https://athena.ohdsi.org/search-terms/terms/4205502/){:target="_blank"} | Resuscitation                     |
+| [440921](https://athena.ohdsi.org/search-terms/terms/440921/){:target="_blank"}   | Traumatic injury                  |
 
 
 ## .stop_reason_concept_id
 The foreign key to the *concept* table. <br>
-The run is stopped due to various reasons.
+Record the reason why the run was stopped.
 
-**Allowed concepts:**
-
-| concept_id                                                                        | concept_name                                                   |
-|-----------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [4149524](https://athena.ohdsi.org/search-terms/terms/4149524/){:target="_blank"} | Patient's condition improved                                   |
-| [434489](https://athena.ohdsi.org/search-terms/terms/434489/){:target="_blank"}   | Dead                                                           |
-| [4154766](https://athena.ohdsi.org/search-terms/terms/4154766/){:target="_blank"} | Moribund                                                       |
-| [434263](https://athena.ohdsi.org/search-terms/terms/434263/){:target="_blank"}   | Complication of extracorporeal circulation                     |
-| [4337306](https://athena.ohdsi.org/search-terms/terms/4337306/){:target="_blank"} | Implantation of ventricular assist device                      |
-| [4272324](https://athena.ohdsi.org/search-terms/terms/4272324/){:target="_blank"} | Cardiopulmonary bypass operation                               |
-| [4137127](https://athena.ohdsi.org/search-terms/terms/4137127/){:target="_blank"} | Transplantation of heart                                       |
-| [4337138](https://athena.ohdsi.org/search-terms/terms/4337138/){:target="_blank"} | Transplant of lung                                             |
-| [4138959](https://athena.ohdsi.org/search-terms/terms/4138959/){:target="_blank"} | Heart-lung transplant with recipient cardiectomy-pneumonectomy |
-
-If the run was stopped completely because of a complication of an ECLS component, make sure to capture the respective complication. *434263, Complication of extracorporeal circulation* serves as a high-level concept.
-
-
-!!! info "Death"
-    If the patient dies, a respective entry in the OMOP CDM *death* table
-    is necessary. Sometimes, ECLS support is withdrawn for a *Moribund* patient,
-    because death is expected. The major difference between *Dead* and
-    *Moribund* regarding data capture is the timestamp of *death_datetime*.
-
-    The patient dies "on ECMO" => *Dead*: death.death_datetime == ecls_run.stop_datetime <br>
-    The patient is decannulated and dies shortly afterwards => *Moribund*: death.death_datetime > ecls_run.stop_datetime
+Refer to [Stop reasons](../userguide/stop_reasons.md) for details on
+stopping the run, circuit and/or component properly.
