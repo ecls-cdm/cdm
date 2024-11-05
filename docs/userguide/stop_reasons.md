@@ -12,13 +12,7 @@ to more efficient, safer and targeted treatment approaches.
 **Stop reasons** are collected for each **core table**.
 Depending on the core table, additional concepts specific to this
 table are available. Stop reasons are collected using the
-*.stop_reason_concept_id* column of each respective table. For
-stop reasons that are not complications refer to the structure
-documentation.
-
-If a complication is the reason for stopping a circuit and/or component
-choose the most specific concept and use it as *.stop_reason_concept_id*
-for every component involved.
+*.stop_reason_concept_id* column of each respective table.
 
 ## ...without complications
 
