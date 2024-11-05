@@ -24,11 +24,11 @@ as soon as patients are put on ECLS.
 The ECLS CDM is...
 
 - 100% open-source in the spirit of the OMOP CDM and open to community
-contributions
+  contributions
 - data privacy-friendly by being self-hosted
 - inspired by the infastructure of the ELSO Registry and uses similar
   terminology
-- officially endorsed by the [Extracorporeal Life Support Organization (ELSO)](https://elso.org){:target="_blank"} and by [OHDSI](https://ohdsi.org){:target="_blank"} as stakeholder institution
+- officially endorsed by the [Extracorporeal Life Support Organization (ELSO)](https://elso.org){:target="\_blank"} and by [OHDSI](https://ohdsi.org){:target="\_blank"} as stakeholder institution
   of the OMOP CDM.
 
 The ECLS CDM aims to be compliant and interoperable with the ELSO Registry.
@@ -36,10 +36,10 @@ A detailed documentation for dedicated ETL guidelines will be provided on
 this website in the future.
 
 !!! info
-    As of August 2024, the ECLS CDM oversees data collection for standard
-    ECLS applications and is set to be expanded to incorporate specialized
-    therapy regimens, including ECPR, trauma-related ECLS therapy,
-    and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
+As of August 2024, the ECLS CDM oversees data collection for standard
+ECLS applications and is set to be expanded to incorporate specialized
+therapy regimens, including ECPR, trauma-related ECLS therapy,
+and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
 
 ## Basic usage
 
@@ -91,10 +91,10 @@ In contrast, the **ECLS CDM** only handles data regarding:
 ## Terminology
 
 Frequently used terms in the context of extracorporeal life support are
-well defined by two landmark publications, the so-called *ELSO Maastricht Treaties*.
+well defined by two landmark publications, the so-called _ELSO Maastricht Treaties_.
 
-- [The Extracorporeal Life Support Organization Maastricht Treaty for Nomenclature in Extracorporeal Life Support. A Position Paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/29614239/){:target="_blank"}, 2018, DOI: 10.1186/s13054-019-2334-8
-- [The ELSO Maastricht Treaty for ECLS Nomenclature: abbreviations for cannulation configuration in extracorporeal life support - a position paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/30736845/){:target="_blank"}, 2018, DOI: 10.1164/rccm.201710-2130CP
+- [The Extracorporeal Life Support Organization Maastricht Treaty for Nomenclature in Extracorporeal Life Support. A Position Paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/29614239/){:target="\_blank"}, 2018, DOI: 10.1186/s13054-019-2334-8
+- [The ELSO Maastricht Treaty for ECLS Nomenclature: abbreviations for cannulation configuration in extracorporeal life support - a position paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/30736845/){:target="\_blank"}, 2018, DOI: 10.1164/rccm.201710-2130CP
 
 ## Compatibility
 

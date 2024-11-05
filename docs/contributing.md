@@ -31,7 +31,7 @@ and [Issues](https://github.com/ecls-cdm/cdm/issues) sections of the repository.
 
 The material tables are designed to store the specific material used
 for each component. Even though they could technically live in the
-*device_exposure* table, we decided to self-manage components for
+_device_exposure_ table, we decided to self-manage components for
 increased flexibility.
 
 If the material for your component is missing, please

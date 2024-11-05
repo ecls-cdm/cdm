@@ -10,10 +10,10 @@ easy to understand. The tables of the ECLS CDM are divided into **core tables**
 and **support tables**. The core tables store information about the
 parts of the ECLS circuit as well as details about the nature of the ECLS
 exposure. The support tables help to connect components with the circuit
-in a generic fashion (using the *ecls_circuit_component* table) and describe
+in a generic fashion (using the _ecls_circuit_component_ table) and describe
 the specific component materials. The expansion is linked to the OMOP CDM
-standardized clinical tables via foreign key-relationships to *person*,
-*visit_occurrence*, *visit_detail* and *concept*.
+standardized clinical tables via foreign key-relationships to _person_,
+_visit_occurrence_, _visit_detail_ and _concept_.
 
 !!! info "Nota bene"
 

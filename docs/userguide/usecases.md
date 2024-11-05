@@ -11,12 +11,12 @@ some typical use cases.
 Assume the machine runs smoothly with no need to change any circuit parts:
 Your ECLS circuit will most-likely consist of the following components:
 
-  - A console
-  - Two single-lumen cannulas, one draining blood, one returning; alternatively
-    one dual-lumen cannula, providing both blood flow directions
-  - A blood pump
-  - A membrane lung
-  - A temperature regulation device
+- A console
+- Two single-lumen cannulas, one draining blood, one returning; alternatively
+  one dual-lumen cannula, providing both blood flow directions
+- A blood pump
+- A membrane lung
+- A temperature regulation device
 
 For each of the components as well as the run and circuit you will have
 to create a database entry.
@@ -30,28 +30,28 @@ to create a database entry.
   one database entry in the respective database table.</figcaption>
 </figure>
 
-*.start_datetime* and *.stop_datetime* are the same for each entry, since
+_.start_datetime_ and _.stop_datetime_ are the same for each entry, since
 the components were started at the same time and stopped at the same time
 as well.
 
 ## Adding more cannulas
 
 If more cannulas are required, it's as simple as adding
-a new entry in *ecls_cannula* and connecting it via the *ecls_circuit_component*
-table. The *start_datetime* is inherently difference for the latter entry.
+a new entry in _ecls_cannula_ and connecting it via the _ecls_circuit_component_
+table. The _start_datetime_ is inherently difference for the latter entry.
 
 More cannulas might be necessary due to drainage insufficiencies or changes
 in strategies (e.g.: switching from VV-ECMO to VVA-ECMO).
 
 !!! note
-    If the cannula changes the mode, make sure to set a proper *.stop_datetime*
-    for the current entry in *ecls_mode* and add a new entry where:
+If the cannula changes the mode, make sure to set a proper _.stop_datetime_
+for the current entry in _ecls_mode_ and add a new entry where:
 
     *old_entry*.stop_datetime == *new_entry*.start_datetime
 
 !!! note
-    Adding a third venous cannula to a veno-venous configuration will not
-    change the mode.
+Adding a third venous cannula to a veno-venous configuration will not
+change the mode.
 
 <figure markdown="span">
 ![More cannulas are necessary](../images/more-cannulas.png){:style="height:300px;"}
@@ -75,7 +75,7 @@ adding more components.
 Sometimes more than one membrane lung necessary to increase oxygenation
 and decarboxylation efficiencies. After adding a second membrane lung to
 your database and connecting it to the circuit, you will need an additional
-entry in the *observation* table specifying the configuration of the
+entry in the _observation_ table specifying the configuration of the
 membrane lungs in relation to each other.
 
 <figure markdown="span">
@@ -84,8 +84,8 @@ more-membrane-lungs.png){:style="height:300px;"}
 <figcaption>Another membrane lung is introduced.</figcaption>
 </figure>
 
-!!! info "Concepts for the *observation* table"
-    Choose accordingly:
+!!! info "Concepts for the _observation_ table"
+Choose accordingly:
 
     *[36717872](https://athena.ohdsi.org/search-terms/terms/36717872/){:target="_blank"},	Membrane lungs in serial configuration* <br>
     *[36717873](https://athena.ohdsi.org/search-terms/terms/36717873/){:target="_blank"},	Membrane lungs in parallel configuration*
@@ -93,13 +93,12 @@ more-membrane-lungs.png){:style="height:300px;"}
 ## Exchanging a cannula
 
 If one of your cannulas needs to be removed and replaced with a new cannula,
-stop the old cannula, select an appropriate *removal_concept_id*, and add a new cannula.
-
+stop the old cannula, select an appropriate _removal_concept_id_, and add a new cannula.
 
 !!! info "Complication"
-    If the reason for the removal of the cannula
-    is a complication, you must declare the appropriate complication in
-    *stop_reason_concept_id* of the cannula.
+If the reason for the removal of the cannula
+is a complication, you must declare the appropriate complication in
+_stop_reason_concept_id_ of the cannula.
 
 <figure markdown="span">
 ![Cannulas are exchanged](../images/exchanged-cannulas.png){:style="height:300px;"}
