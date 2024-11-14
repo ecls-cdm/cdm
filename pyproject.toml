@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cdm"
-version = "0.1.0"
+version = "v0.1.0"
 description = "The ECLS CDM - an OMOP CDM expansion to map ECLS-related data"
 authors = []
 license = "CC0-1.0 Universal"
@@ -15,6 +15,7 @@ mkdocs-glightbox = "^0.4.0"
 pre-commit = "^4.0.1"
 ipython = "^8.29.0"
 black = "^24.10.0"
+pandas = "^2.2.3"
 
 [build-system]
 requires = ["poetry-core"]
