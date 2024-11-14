@@ -43,15 +43,17 @@ table. The _start_datetime_ is inherently difference for the latter entry.
 More cannulas might be necessary due to drainage insufficiencies or changes
 in strategies (e.g.: switching from VV-ECMO to VVA-ECMO).
 
-!!! note
-If the cannula changes the mode, make sure to set a proper _.stop_datetime_
-for the current entry in _ecls_mode_ and add a new entry where:
+!!! info
+
+    If the cannula changes the mode, make sure to set a proper _.stop_datetime_
+    for the current entry in _ecls_mode_ and add a new entry where:
 
     *old_entry*.stop_datetime == *new_entry*.start_datetime
 
-!!! note
-Adding a third venous cannula to a veno-venous configuration will not
-change the mode.
+!!! info
+
+    Adding a third venous cannula to a veno-venous configuration will not
+    change the mode.
 
 <figure markdown="span">
 ![More cannulas are necessary](../images/more-cannulas.png){:style="height:300px;"}
@@ -85,7 +87,8 @@ more-membrane-lungs.png){:style="height:300px;"}
 </figure>
 
 !!! info "Concepts for the _observation_ table"
-Choose accordingly:
+
+    Choose accordingly:
 
     *[36717872](https://athena.ohdsi.org/search-terms/terms/36717872/){:target="_blank"},	Membrane lungs in serial configuration* <br>
     *[36717873](https://athena.ohdsi.org/search-terms/terms/36717873/){:target="_blank"},	Membrane lungs in parallel configuration*
@@ -96,9 +99,10 @@ If one of your cannulas needs to be removed and replaced with a new cannula,
 stop the old cannula, select an appropriate _removal_concept_id_, and add a new cannula.
 
 !!! info "Complication"
-If the reason for the removal of the cannula
-is a complication, you must declare the appropriate complication in
-_stop_reason_concept_id_ of the cannula.
+
+    If the reason for the removal of the cannula
+    is a complication, you must declare the appropriate complication in
+    _stop_reason_concept_id_ of the cannula.
 
 <figure markdown="span">
 ![Cannulas are exchanged](../images/exchanged-cannulas.png){:style="height:300px;"}

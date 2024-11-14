@@ -26,9 +26,10 @@ The date and time when the blood pump was started.
 The date and time when the blood pump was removed.
 
 !!! info
-Blood pumps are usually not changed in a running circuit. So they
-typically have the same _start_datetime_ and _stop_datetime_ as the corresponding
-circuit.
+
+    Blood pumps are usually not changed in a running circuit. So they
+    typically have the same _start_datetime_ and _stop_datetime_ as the corresponding
+    circuit.
 
 ## .person_id
 

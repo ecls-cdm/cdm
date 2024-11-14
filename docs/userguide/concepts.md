@@ -14,8 +14,9 @@ using the _observation_ table with two concepts:
 2. The actual observation as _value_as_concept_id_
 
 !!! info
-You can limit the timeframe by using any _History of event_ child that is more precise.
-Click [here](https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&vocabulary=OMOP+Extension&page=1&pageSize=15&query=%22history+of+event%22&boosts){:target="\_blank"} for more concepts.
+
+    You can limit the timeframe by using any _History of event_ child that is more precise.
+    Click [here](https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&vocabulary=OMOP+Extension&page=1&pageSize=15&query=%22history+of+event%22&boosts){:target="\_blank"} for more concepts.
 
 ## Diagnoses
 
@@ -33,10 +34,11 @@ are:
 | [32908](https://athena.ohdsi.org/search-terms/terms/32908/){:target="\_blank"} | Secondary diagnosis | condition_occurrence |         |
 
 !!! info
-In line with standard mapping rules, pre-existing conditions will be
-captured in the _observation_ table.
-Click [here](https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&conceptClass=Condition+Status&page=1&pageSize=50)
-for more types of diagnosis.
+
+    In line with standard mapping rules, pre-existing conditions will be
+    captured in the _observation_ table.
+    Click [here](https://athena.ohdsi.org/search-terms/terms?standardConcept=Standard&conceptClass=Condition+Status&page=1&pageSize=50)
+    for more types of diagnosis.
 
 ## ECLS-specific concepts
 
@@ -52,8 +54,8 @@ potentially impacting lung function and cardiac output.
 | [36717797](https://athena.ohdsi.org/search-terms/terms/36717797/){:target="\_blank"} | Right congenital diaphragmatic hernia | condition_occurrence |         |
 
 !!! info
-The repair is captured using _[4147525](https://athena.ohdsi.org/search-terms/terms/4147525/){:target="\_blank"}, Repair of neonatal diaphragmatic hernia_
-as _procedure_ or _observation_, if the exact point in time is not known (see above).
+
+    The repair is captured using _[4147525](https://athena.ohdsi.org/search-terms/terms/4147525/){:target="\_blank"}, Repair of neonatal diaphragmatic hernia_ as _procedure_ or _observation_, if the exact point in time is not known (see above).
 
 ### ECLS as bridge to...
 
@@ -93,8 +95,9 @@ drawing blood from an extracorporeal circuit.
 | [36717875](https://athena.ohdsi.org/search-terms/terms/36717875/){:target="\_blank"} | Post-membrane lung blood specimen | specimen |         |
 
 !!! info
-A _pre-pump head blood specimen_ is intentionally missing as it is
-equal to _Pre-membrane lung blood specimen_.
+
+    A _pre-pump head blood specimen_ is intentionally missing as it is
+    equal to _Pre-membrane lung blood specimen_.
 
 Typical other sites of origin are:
 
@@ -104,8 +107,9 @@ Typical other sites of origin are:
 | [4045667](https://athena.ohdsi.org/search-terms/terms/4045667/){:target="\_blank"} | Venous blood specimen   | specimen |         |
 
 !!! info
-If laterality is important (V-A ECMO with possible differential
-oxygenation), use the _anatomic_site_concept_id_:
+
+    If laterality is important (V-A ECMO with possible differential
+    oxygenation), use the _anatomic_site_concept_id_:
 
     For example:
 
@@ -119,8 +123,9 @@ concept types. In most cases, the setting and the actual measurement
 might be the same.
 
 !!! info "RPM is a unit"
-Revolutions per minute (RPM), although frequently misused
-as a proxy for the blood pump speed, is a unit.
+
+    Revolutions per minute (RPM), although frequently misused
+    as a proxy for the blood pump speed, is a unit.
 
 | concept_id                                                                           | concept_name                                                                 | table       | proposed UOM | comment |
 | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | ----------- | ------------ | ------- |
@@ -176,8 +181,9 @@ decarboxylated depending on the intrinsic cardiac output.
 | [36717861](https://athena.ohdsi.org/search-terms/terms/36717861/){:target="\_blank"} | Differential carbon dioxide tension | observation |                                                                                                              |
 
 !!! info
-_[36717860](https://athena.ohdsi.org/search-terms/terms/36717860/){:target="\_blank"}, Differential hypoxemia_ is the resulting condition. Do not
-forget to create an entry for it in the _condition_occurrence_ table.
+
+    _[36717860](https://athena.ohdsi.org/search-terms/terms/36717860/){:target="\_blank"}, Differential hypoxemia_ is the resulting condition. Do not
+    forget to create an entry for it in the _condition_occurrence_ table.
 
 ### Recirculation
 
@@ -185,9 +191,10 @@ Recirculation is only observable in venovenous configurations. Do not forget abo
 the recirculation fraction as measureable parameter.
 
 !!! info
-Recirculation can also be a reason to exchange parts of your circuit.
-If it is the primary reason it is considered a complication. Make sure
-to use the concept for _stop_reason_concept_id_ if this is the case.
+
+    Recirculation can also be a reason to exchange parts of your circuit.
+    If it is the primary reason it is considered a complication. Make sure
+    to use the concept for _stop_reason_concept_id_ if this is the case.
 
 | concept_id                                                                           | concept_name  | table       | comment |
 | ------------------------------------------------------------------------------------ | ------------- | ----------- | ------- |
@@ -199,8 +206,9 @@ Continuous renal replacement therapy (CRRT) machines can be connected
 to the ECLS circuit in different ways.
 
 !!! info
-Make sure to create at least a _procedure_occurrence_ entry for the
-therapy itself. E.g., _[37018292](https://athena.ohdsi.org/search-terms/terms/37018292/){:target="\_blank"}, Continuous renal replacement therapy_.
+
+    Make sure to create at least a _procedure_occurrence_ entry for the
+    therapy itself. E.g., _[37018292](https://athena.ohdsi.org/search-terms/terms/37018292/){:target="\_blank"}, Continuous renal replacement therapy_.
 
 | concept_id                                                                           | concept_name                                                                               | table       | comment                                                               |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------- | --------------------------------------------------------------------- |
@@ -299,7 +307,8 @@ The following units are often encountered in the field of ECLS.
 | [8511](https://athena.ohdsi.org/search-terms/terms/8511/){:target="\_blank"}         | wk           | week                              |
 
 !!! info
-For a complete list, check out the UCUM vocabulary [here](https://athena.ohdsi.org/search-terms/terms?domain=Unit&standardConcept=Standard&vocabulary=UCUM&page=1&pageSize=500).
+
+    For a complete list, check out the UCUM vocabulary [here](https://athena.ohdsi.org/search-terms/terms?domain=Unit&standardConcept=Standard&vocabulary=UCUM&page=1&pageSize=500).
 
 ### Vital parameters
 

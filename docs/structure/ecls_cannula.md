@@ -133,10 +133,11 @@ _.tip_position_concept_id_ is to provide details about _where_ the blood
 was drained from or returned to.
 
 !!! info "An example"
-Sometimes it is important to drain or return blood from a specific site,
-such as the pulmonary artery. However, cannulation strategies to
-reach the pulmonary artery might be subcutaneous with a _.location_concept_id_
-of _4006845, Internal jugular vein structure_.
+
+    Sometimes it is important to drain or return blood from a specific site,
+    such as the pulmonary artery. However, cannulation strategies to
+    reach the pulmonary artery might be subcutaneous with a _.location_concept_id_
+    of _4006845, Internal jugular vein structure_.
 
     If the exact draining or return site is not important, use the same
     concept as in *.location_concept_id*.

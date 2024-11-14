@@ -1,6 +1,7 @@
 !!! warning "Do not modify the material table records!"
-The material tables are managed by the ECLS CDM community and any
-local modification will render your ECLS CDM version incompatible.
+
+    The material tables are managed by the ECLS CDM community and any
+    local modification will render your ECLS CDM version incompatible.
 
     If you wish to add more material, please open a GitHub issue, so that
     your request can be processed and accepted by the community.

@@ -67,19 +67,21 @@ respiratory distress, cardiogenic shock, trauma or during resuscitation
 was put on ECLS. Child concepts might also be used.
 
 !!! warning
-Due to the nested structure of SNOMED CT some of the concepts might
-belong to multiple parent concepts and ex-post analysis whether the
-leading cause for ECLS was a traumatic injury might be difficult. Make
-sure to collect primary and secondary diagnoses accordingly and store them
-in the OMOP CDM _condition_occurrence_ table.
+
+    Due to the nested structure of SNOMED CT some of the concepts might
+    belong to multiple parent concepts and ex-post analysis whether the
+    leading cause for ECLS was a traumatic injury might be difficult. Make
+    sure to collect primary and secondary diagnoses accordingly and store them
+    in the OMOP CDM _condition_occurrence_ table.
 
     For example, *(90070003) Pneumothorax due to trauma (disorder)* is a
     *(320136) Disorder of respiratory system* as well as *(440921) Traumatic injury*.
 
 !!! info "Extracorporeal cardiopulmonary resuscitation (ECPR)"
-ECPR is defined as the use of veno-arterial ECMO during cardiac arrest,
-where conventional CPR is stopped as soon as blood flow is established.
-For ECPR use the _Resuscitation_ concept.
+
+    ECPR is defined as the use of veno-arterial ECMO during cardiac arrest,
+    where conventional CPR is stopped as soon as blood flow is established.
+    For ECPR use the _Resuscitation_ concept.
 
 **Allowed concepts (including child concepts):**
 

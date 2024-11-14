@@ -2,8 +2,9 @@ Depending on the cannulation strategy, circuits can be operated in
 different modes. Modes can be switched multiple times throughout a run.
 
 !!! info
-If modes are switched, make sure that _old_entry.stop_datetime_ and
-_new_entry.start_datetime_ are the same.
+
+    If modes are switched, make sure that _old_entry.stop_datetime_ and
+    _new_entry.start_datetime_ are the same.
 
 | Column name     | Required | Data Type                             |
 | --------------- | -------- | ------------------------------------- |

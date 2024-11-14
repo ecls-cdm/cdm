@@ -36,10 +36,11 @@ A detailed documentation for dedicated ETL guidelines will be provided on
 this website in the future.
 
 !!! info
-As of August 2024, the ECLS CDM oversees data collection for standard
-ECLS applications and is set to be expanded to incorporate specialized
-therapy regimens, including ECPR, trauma-related ECLS therapy,
-and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
+
+    As of August 2024, the ECLS CDM oversees data collection for standard
+    ECLS applications and is set to be expanded to incorporate specialized
+    therapy regimens, including ECPR, trauma-related ECLS therapy,
+    and COVID-19 treatments (referred to as "addenda” in the ELSO Registry).
 
 ## Basic usage
 

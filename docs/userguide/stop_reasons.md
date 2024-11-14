@@ -47,10 +47,11 @@ circuit, components).
 | [36717877](https://athena.ohdsi.org/search-terms/terms/36717877/){:target="\_blank"} | End of product life-cycle.                                     | This concept should not be used as concept to end a run but only for the circuit and/or components.                                                                                                                                                                                                                                                                   |
 
 !!! info "Death"
-If the patient dies, a respective entry in the OMOP CDM _death_ table
-is necessary. Sometimes, ECLS support is withdrawn for a _Moribund_ patient,
-because death is expected. The major difference between _Dead_ and
-_Moribund_ regarding data capture is the timestamp of _death_datetime_.
+
+    If the patient dies, a respective entry in the OMOP CDM _death_ table
+    is necessary. Sometimes, ECLS support is withdrawn for a _Moribund_ patient,
+    because death is expected. The major difference between _Dead_ and
+    _Moribund_ regarding data capture is the timestamp of _death_datetime_.
 
     The patient dies "on ECLS"<br>
     *Dead*: death.death_datetime = ecls_run.stop_datetime <br>

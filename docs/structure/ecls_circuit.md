@@ -27,15 +27,17 @@ Stores the timestamp of the beginning of the ECLS blood flow.
 Denotes the time the circuit was stopped.
 
 !!! warning "Timestamps"
-The first circuit in a run must have the same start_datetime as
-_ecls_run.start_datetime_. If a circuit is changed or stopped, do
-not include retransfusion procedures as part of the runtime.
+
+    The first circuit in a run must have the same start_datetime as
+    _ecls_run.start_datetime_. If a circuit is changed or stopped, do
+    not include retransfusion procedures as part of the runtime.
 
 !!! info "Reinfusion"
-Sometimes blood is reinfused when changing the circuit or ending the
-run. Use _[36717920](https://athena.ohdsi.org/search-terms/terms/36717920/),
-Reinfusion of blood from extracorporeal life support circuit_ to
-collect this procedure accordingly.
+
+    Sometimes blood is reinfused when changing the circuit or ending the
+    run. Use _[36717920](https://athena.ohdsi.org/search-terms/terms/36717920/),
+    Reinfusion of blood from extracorporeal life support circuit_ to
+    collect this procedure accordingly.
 
 ## .person_id
 

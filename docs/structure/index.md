@@ -19,20 +19,20 @@ _visit_occurrence_, _visit_detail_ and _concept_.
 
     These rules apply to all of the tables:
 
-      - The primary key column is a PostgreSQL identity column
-        and a value will be assigned automatically.
-      - Datetimes are stored including time zones (timestamptz). Please
-        verify that your timezone is configured properly.
-      - *stop_datetime* and *stop_reason_concept_id* are mandatory at the
-        end of a run.
-      - All core tables are linked to the OMOP CDM *person* table to
-        simplify queries.
-      - *_material tables should never be modified locally. They are managed
-        by the community.
+    - The primary key column is a PostgreSQL identity column
+      and a value will be assigned automatically.
+    - Datetimes are stored including time zones (timestamptz). Please
+      verify that your timezone is configured properly.
+    - *stop_datetime* and *stop_reason_concept_id* are mandatory at the
+      end of a run.
+    - All core tables are linked to the OMOP CDM *person* table to
+      simplify queries.
+    - *_material tables should never be modified locally. They are
+      managed by the community.
 
 ## Entity-Relationship-Diagram
 
-The current version (1.0.0) of the common data model is depicted below:
+The current version of the common data model is depicted below:
 
 ![alt text](<../images/ECLS CDM.png>)
 

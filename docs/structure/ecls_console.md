@@ -23,9 +23,10 @@ The primary key.
 Use the date and time when the console was started.
 
 !!! info "Circuit components"
-A console, blood pump and temperature regulation device are usually
-only present once in a circuit and seldomly changed without exchanging
-the whole circuit. Make sure to set the correct timestamps.
+
+    A console, blood pump and temperature regulation device are usually
+    only present once in a circuit and seldomly changed without exchanging
+    the whole circuit. Make sure to set the correct timestamps.
 
 ## .stop_datetime
 

@@ -1,6 +1,7 @@
 !!! warning "Do not modify the material table records!"
-The material tables are managed by the ECLS CDM community and any
-local modification will render your ECLS CDM version incompatible.
+
+    The material tables are managed by the ECLS CDM community and any
+    local modification will render your ECLS CDM version incompatible.
 
     If you wish to add more material, please open a GitHub issue, so that
     your request can be processed and accepted by the community.
@@ -35,7 +36,7 @@ The manufacturer's company name.
 The foreign key to the _concept_ table. <br>
 This attribute provides details about the type of component.
 
-The only valid concept is: _[4105211](https://athena.ohdsi.org/search-terms/terms/4105211){:target="\_blank"}, Membrane oxygenator_
+The only valid concept is: _[4180582](https://athena.ohdsi.org/search-terms/terms/4180582){:target="\_blank"}, Artificial lung_
 
 ## .coating
 
