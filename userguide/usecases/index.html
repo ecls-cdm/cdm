@@ -1291,7 +1291,7 @@ Your ECLS circuit will most-likely consist of the following components:</p>
 <ul>
 <li>A console</li>
 <li>Two single-lumen cannulas, one draining blood, one returning; alternatively
-    one dual-lumen cannula, providing both blood flow directions</li>
+  one dual-lumen cannula, providing both blood flow directions</li>
 <li>A blood pump</li>
 <li>A membrane lung</li>
 <li>A temperature regulation device</li>
@@ -1314,14 +1314,14 @@ a new entry in <em>ecls_cannula</em> and connecting it via the <em>ecls_circuit_
 table. The <em>start_datetime</em> is inherently difference for the latter entry.</p>
 <p>More cannulas might be necessary due to drainage insufficiencies or changes
 in strategies (e.g.: switching from VV-ECMO to VVA-ECMO).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>If the cannula changes the mode, make sure to set a proper <em>.stop_datetime</em>
 for the current entry in <em>ecls_mode</em> and add a new entry where:</p>
 <p><em>old_entry</em>.stop_datetime == <em>new_entry</em>.start_datetime</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Adding a third venous cannula to a veno-venous configuration will not
 change the mode.</p>
 </div>

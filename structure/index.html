@@ -1165,19 +1165,19 @@ standardized clinical tables via foreign key-relationships to <em>person</em>,
 <p>These rules apply to all of the tables:</p>
 <ul>
 <li>The primary key column is a PostgreSQL identity column
-    and a value will be assigned automatically.</li>
+  and a value will be assigned automatically.</li>
 <li>Datetimes are stored including time zones (timestamptz). Please
-    verify that your timezone is configured properly.</li>
+  verify that your timezone is configured properly.</li>
 <li><em>stop_datetime</em> and <em>stop_reason_concept_id</em> are mandatory at the
-    end of a run.</li>
+  end of a run.</li>
 <li>All core tables are linked to the OMOP CDM <em>person</em> table to
-    simplify queries.</li>
-<li>*_material tables should never be modified locally. They are managed
-    by the community.</li>
+  simplify queries.</li>
+<li>*_material tables should never be modified locally. They are
+  managed by the community.</li>
 </ul>
 </div>
 <h2 id="entity-relationship-diagram">Entity-Relationship-Diagram</h2>
-<p>The current version (1.0.0) of the common data model is depicted below:</p>
+<p>The current version of the common data model is depicted below:</p>
 <p><a class="glightbox" href="../images/ECLS%20CDM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/ECLS%20CDM.png" /></a></p>
 <p>For a more detailed description of the tables, please
 refer to the specific section of the documentation.</p>
