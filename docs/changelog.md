@@ -10,7 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0] – 2024-0x-xx
+## [v1.0.0] – 2024-11-14
+
+- Initial release
 
 [Unreleased]: https://github.com/ecls-cdm/cdm
-[1.0.0]: https://github.com/ecls-cdm/cdm/releases/tag/1.0.0
+[v1.0.0]: https://github.com/ecls-cdm/cdm/releases/tag/v1.0.0
