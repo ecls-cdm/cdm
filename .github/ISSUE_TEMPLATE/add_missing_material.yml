@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for taking your time to help improve this project!
         Follow these steps to successfully submit your proposal:
-          1. Download the [1.0.0_add_material_template.xlsx template .csv-file](../blob/main/.github/ISSUE_TEMPLATE/1.0.0_add_material_template.xlsx).
+          1. Download the [1.0.0_add_material_template.xlsx template .csv-file](https://github.com/ecls-cdm/cdm/raw/refs/heads/main/.github/ISSUE_TEMPLATE/1.0.0_add_material_template.xlsx).
           2. Fill out the .csv-file following the instructions mentioned within the first worksheet.
           3. Export the material you want to submit to a .csv-based format (optimally with semicolons as separators).
           4. Paste the raw .csv-content to the textfield below.
