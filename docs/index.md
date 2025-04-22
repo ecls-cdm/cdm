@@ -26,7 +26,7 @@ The ECLS CDM is...
 - 100% open-source in the spirit of the OMOP CDM and open to community
   contributions
 - data privacy-friendly by being self-hosted
-- inspired by the infastructure of the ELSO Registry and uses similar
+- inspired by the infastructure of the ELSO Registry and using similar
   terminology
 - officially endorsed by the [Extracorporeal Life Support Organization (ELSO)](https://elso.org){:target="\_blank"} and by [OHDSI](https://ohdsi.org){:target="\_blank"} as stakeholder institution
   of the OMOP CDM.
@@ -95,7 +95,7 @@ Frequently used terms in the context of extracorporeal life support are
 well defined by two landmark publications, the so-called _ELSO Maastricht Treaties_.
 
 - [The Extracorporeal Life Support Organization Maastricht Treaty for Nomenclature in Extracorporeal Life Support. A Position Paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/29614239/){:target="\_blank"}, 2018, DOI: 10.1186/s13054-019-2334-8
-- [The ELSO Maastricht Treaty for ECLS Nomenclature: abbreviations for cannulation configuration in extracorporeal life support - a position paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/30736845/){:target="\_blank"}, 2018, DOI: 10.1164/rccm.201710-2130CP
+- [The ELSO Maastricht Treaty for ECLS Nomenclature: abbreviations for cannulation configuration in extracorporeal life support - a position paper of the Extracorporeal Life Support Organization](https://pubmed.ncbi.nlm.nih.gov/30736845/){:target="\_blank"}, 2019, DOI: 10.1164/rccm.201710-2130CP
 
 ## Compatibility
 

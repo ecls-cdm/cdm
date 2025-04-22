@@ -11,7 +11,6 @@ and priming substances is stored using dedicated columns.
 | run_id                       | True     | integer                               |
 | tubing_size_in_inch          | True     | integer                               |
 | priming_solution_concept_id  | True     | integer                               |
-| start_reason_concept_id      | True     | integer                               |
 | stop_reason_concept_id       | (True)   | integer                               |
 
 ## .circuit_id
