@@ -27,6 +27,7 @@ nav:
     - Use cases: userguide/usecases.md
     - Stop reasons: userguide/stop_reasons.md
     - Concepts: userguide/concepts.md
+    - Concept releases: userguide/concept_releases.md
     - Tracking materials: userguide/trackingmaterials.md
   - Contributing: contributing.md
   - Changelog: changelog.md
