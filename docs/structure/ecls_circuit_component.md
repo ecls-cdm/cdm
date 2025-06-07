@@ -32,21 +32,19 @@ The foreign key to the _person_ table.
 
 The foreign key to the _ecls_circuit_ table.
 
-## .component_type_concept_id
+## .component_type_concept
 
 The foreign key to the _concept_ table. <br>
 This attribute will define, what type of component was connected to the
 circuit. Choose one of the following high-level concepts:
 
-**Allowed concepts:**
+**Allowed strings:**
 
-| concept_id                                                                           | concept_name                                              | comment |
-| ------------------------------------------------------------------------------------ | --------------------------------------------------------- | ------- |
-| [4260370](https://athena.ohdsi.org/search-terms/terms/4260370/){:target="\_blank"}   | Pump                                                      |         |
-| [36717850](https://athena.ohdsi.org/search-terms/terms/36717850/){:target="\_blank"} | Extracorporeal life support cannula                       |         |
-| [45768426](https://athena.ohdsi.org/search-terms/terms/45768426/){:target="\_blank"} | Console                                                   |         |
-| [4180582](https://athena.ohdsi.org/search-terms/terms/4180582/){:target="\_blank"}   | Artificial lung                                           |         |
-| [36717854](https://athena.ohdsi.org/search-terms/terms/36717854/){:target="\_blank"} | Extracorporeal life support temperature regulation device |         |
+- ecls_blood_pump
+- ecls_cannula
+- ecls_console
+- ecls_membrane_lung
+- ecls_temperature_regulation_device
 
 ## .component_id
 

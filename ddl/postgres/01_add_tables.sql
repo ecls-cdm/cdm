@@ -129,7 +129,7 @@ CREATE TABLE ecls_circuit_component (
     stop_datetime timestamptz,
     person_id integer NOT NULL,
     circuit_id integer NOT NULL,
-    component_type_concept_id integer NOT NULL,
+    component_type text NOT NULL,
     component_id integer NOT NULL
 );
 

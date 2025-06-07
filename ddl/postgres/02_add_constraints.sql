@@ -148,4 +148,4 @@ ALTER TABLE ecls_temperature_regulation_device_material ADD CONSTRAINT ecls_temp
 
 -- Unique constraints for ecls_circuit_component
 ALTER TABLE ecls_circuit_component DROP CONSTRAINT IF EXISTS component_unique_for_circuit CASCADE;
-ALTER TABLE ecls_circuit_component ADD CONSTRAINT component_unique_for_circuit UNIQUE (circuit_id, component_id, component_type_concept_id);
+ALTER TABLE ecls_circuit_component ADD CONSTRAINT component_unique_for_circuit UNIQUE (circuit_id, component_id, component_type);
