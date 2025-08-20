@@ -1,6 +1,6 @@
 [project]
 name = "cdm"
-version = "0.1.0"
+version = "0.2.0"
 description = "The ECLS CDM - an OMOP CDM expansion to map ECLS-related data"
 readme = "README.md"
 requires-python = ">=3.12"
