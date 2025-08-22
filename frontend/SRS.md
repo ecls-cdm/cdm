@@ -6,8 +6,8 @@
 ### Authors: ECLS CDM Working Group
 ### Date: xx.xx.xxxx
 
-Table of contents
-=================
+### Table of contents
+
 * [Revision History](#revision-history)
 * 1 [Introduction](#1-introduction)
   * 1.1 [Purpose](#11-purpose)
