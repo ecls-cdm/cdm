@@ -1,10 +1,10 @@
 # Software Requirements Specification
 
-## Project: Web application for the ECLS-CDM
+## Project: Web application for the ECLS CDM
 
 ### Version: DRAFT
 ### Authors: ECLS CDM Working Group
-### Date: xx.xx.xxxx
+### Date: 08.2025
 
 ### Table of contents
 
